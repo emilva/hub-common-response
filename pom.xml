@@ -8,25 +8,18 @@
     <version>2.3.0</version>
   </parent>
 
-  <artifactId>hub-response-common</artifactId>
-  <version>0.0.1</version>
+  <artifactId>hub-common-response</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
 
-  <name>Hub Response Common</name>
+  <name>Hub Common Response</name>
   <description>A library for describing Black Duck Hub requests and responses.</description>
-  <url>https://www.github.com/blackducksoftware/hub-response-common</url>
+  <url>https://www.github.com/blackducksoftware/hub-common-response</url>
   <inceptionYear>2017</inceptionYear>
 
   <scm>
-    <connection>scm:git:git://github.com/blackducksoftware/hub-response-common.git/</connection>
-    <developerConnection>scm:git:git@github.com:blackducksoftware/hub-response-common.git</developerConnection>
-    <url>https://www.github.com/blackducksoftware/hub-response-common</url>
+    <connection>scm:git:git://github.com/blackducksoftware/hub-common-response.git/</connection>
+    <developerConnection>scm:git:git@github.com:blackducksoftware/hub-common-response.git</developerConnection>
+    <url>https://www.github.com/blackducksoftware/hub-common-response</url>
   </scm>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.blackducksoftware.integration</groupId>
-      <artifactId>integration-common</artifactId>
-      <version>5.2.1</version>
-    </dependency>
-  </dependencies>
 </project>
