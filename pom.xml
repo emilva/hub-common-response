@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>hub-common-response</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.2</version>
 
   <name>Hub Common Response</name>
   <description>A library for describing Black Duck Hub requests and responses.</description>
