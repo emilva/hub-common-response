@@ -21,10 +21,32 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.type;
+package com.blackducksoftware.integration.hub.model.response;
 
-public enum VersionBomLicenseLicenseEnum {
-    CONJUNCTIVE,
-    DISJUNCTIVE;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.RecursiveToStringStyle;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
+/**
+ * All Hub API Responses should be marshalled in to instances of this class.
+ */
+public class HubResponse {
+    public String json;
+
+    @Override
+    public int hashCode() {
+        return HashCodeBuilder.reflectionHashCode(this);
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+        return EqualsBuilder.reflectionEquals(this, obj);
+    }
+
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this, RecursiveToStringStyle.JSON_STYLE);
+    }
 
 }

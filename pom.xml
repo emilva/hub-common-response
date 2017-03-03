@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>hub-common-response</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3</version>
 
   <name>Hub Common Response</name>
   <description>A library for describing Black Duck Hub requests and responses.</description>
@@ -21,4 +21,12 @@
     <developerConnection>scm:git:git@github.com:blackducksoftware/hub-common-response.git</developerConnection>
     <url>https://www.github.com/blackducksoftware/hub-common-response</url>
   </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.5</version>
+    </dependency>
+  </dependencies>
 </project>

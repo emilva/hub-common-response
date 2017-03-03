@@ -23,7 +23,7 @@
  */
 package com.blackducksoftware.integration.hub.model.type;
 
-public enum RiskCountCountEnum {
+public enum RiskCountEnum {
     UNKNOWN,
     OK,
     LOW,

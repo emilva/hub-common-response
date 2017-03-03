@@ -23,14 +23,9 @@
  */
 package com.blackducksoftware.integration.hub.model.type;
 
-public enum VulnerabilityWithRemediationRemediationStatusEnum {
-    DUPLICATE,
-    IGNORED,
-    MITIGATED,
-    NEEDS_REVIEW,
-    NEW,
-    PATCHED,
-    REMEDIATION_COMPLETE,
-    REMEDIATION_REQUIRED;
+public enum ReportFormatEnum {
+    CSV,
+    JSON,
+    TEXT;
 
 }
