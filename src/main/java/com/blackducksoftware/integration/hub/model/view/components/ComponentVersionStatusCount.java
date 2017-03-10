@@ -23,62 +23,11 @@
  */
 package com.blackducksoftware.integration.hub.model.view.components;
 
-import org.apache.commons.lang3.builder.RecursiveToStringStyle;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-
 import com.blackducksoftware.integration.hub.model.enumeration.VersionBomPolicyStatusOverallStatusEnum;
 
-public class ComponentVersionStatusCount {
-    private final VersionBomPolicyStatusOverallStatusEnum name;
+public class ComponentVersionStatusCount extends HubComponent {
+    public VersionBomPolicyStatusOverallStatusEnum name;
 
-    private final int value;
-
-    public ComponentVersionStatusCount(final VersionBomPolicyStatusOverallStatusEnum name, final int value) {
-        this.name = name;
-        this.value = value;
-    }
-
-    public VersionBomPolicyStatusOverallStatusEnum getName() {
-        return name;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
-        result = prime * result + value;
-        return result;
-    }
-
-    @Override
-    public boolean equals(final Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final ComponentVersionStatusCount other = (ComponentVersionStatusCount) obj;
-        if (name != other.name) {
-            return false;
-        }
-        if (value != other.value) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, RecursiveToStringStyle.JSON_STYLE);
-    }
+    public int value;
 
 }

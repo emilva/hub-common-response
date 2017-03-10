@@ -39,9 +39,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
 import com.blackducksoftware.integration.hub.model.enumeration.MatchedFileUsageEnum;
 import com.blackducksoftware.integration.hub.model.view.components.ActivityDataView;
 import com.blackducksoftware.integration.hub.model.view.components.RiskProfileView;
@@ -86,7 +83,7 @@ public class VersionBomComponentView extends HubView {
     private RiskProfileView securityRiskProfile = null;
 
     @SerializedName("usages")
-    private List<MatchedFileUsageEnum> usages = new ArrayList<MatchedFileUsageEnum>();
+    private List<MatchedFileUsageEnum> usages = new ArrayList<>();
 
     @SerializedName("versionRiskProfile")
     private RiskProfileView versionRiskProfile = null;
@@ -334,11 +331,6 @@ public class VersionBomComponentView extends HubView {
 
     public void setVersionRiskProfile(final RiskProfileView versionRiskProfile) {
         this.versionRiskProfile = versionRiskProfile;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.JSON_STYLE);
     }
 
 }

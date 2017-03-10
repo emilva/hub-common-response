@@ -25,133 +25,37 @@ package com.blackducksoftware.integration.hub.model.view.components;
 
 import java.util.List;
 
-import org.apache.commons.lang3.builder.RecursiveToStringStyle;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-
 import com.google.gson.annotations.SerializedName;
 
-public class PolicyOverrideNotificationContent {
-    private String projectName;
+public class PolicyOverrideNotificationContent extends HubComponent {
+    public String projectName;
 
-    private String projectVersionName;
+    public String projectVersionName;
 
-    private String componentName;
+    public String componentName;
 
-    private String componentVersionName;
+    public String componentVersionName;
 
-    private String firstName;
+    public String firstName;
 
-    private String lastName;
+    public String lastName;
 
     @SerializedName("projectVersion")
-    private String projectVersionLink;
+    public String projectVersionLink;
 
     // If version is specified, componentVersionLink will be populated
     // otherwise it will be null
     @SerializedName("componentVersion")
-    private String componentVersionLink;
+    public String componentVersionLink;
 
     // If version is not specified, componentLink will be populated
     // otherwise it will be null
     @SerializedName("component")
-    private String componentLink;
+    public String componentLink;
 
     @SerializedName("bomComponentVersionPolicyStatus")
-    private String bomComponentVersionPolicyStatusLink;
+    public String bomComponentVersionPolicyStatusLink;
 
-    private List<String> policies;
-
-    public String getProjectName() {
-        return projectName;
-    }
-
-    public String getProjectVersionName() {
-        return projectVersionName;
-    }
-
-    public String getComponentName() {
-        return componentName;
-    }
-
-    public String getComponentVersionName() {
-        return componentVersionName;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getProjectVersionLink() {
-        return projectVersionLink;
-    }
-
-    public String getComponentLink() {
-        return componentLink;
-    }
-
-    public void setComponentLink(final String componentLink) {
-        this.componentLink = componentLink;
-    }
-
-    public String getComponentVersionLink() {
-        return componentVersionLink;
-    }
-
-    public String getBomComponentVersionPolicyStatusLink() {
-        return bomComponentVersionPolicyStatusLink;
-    }
-
-    public void setProjectName(final String projectName) {
-        this.projectName = projectName;
-    }
-
-    public void setProjectVersionName(final String projectVersionName) {
-        this.projectVersionName = projectVersionName;
-    }
-
-    public void setComponentName(final String componentName) {
-        this.componentName = componentName;
-    }
-
-    public void setComponentVersionName(final String componentVersionName) {
-        this.componentVersionName = componentVersionName;
-    }
-
-    public void setFirstName(final String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(final String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setProjectVersionLink(final String projectVersionLink) {
-        this.projectVersionLink = projectVersionLink;
-    }
-
-    public void setComponentVersionLink(final String componentVersionLink) {
-        this.componentVersionLink = componentVersionLink;
-    }
-
-    public void setBomComponentVersionPolicyStatusLink(final String bomComponentVersionPolicyStatusLink) {
-        this.bomComponentVersionPolicyStatusLink = bomComponentVersionPolicyStatusLink;
-    }
-
-    public List<String> getPolicies() {
-        return policies;
-    }
-
-    public void setPolicies(final List<String> policies) {
-        this.policies = policies;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, RecursiveToStringStyle.JSON_STYLE);
-    }
+    public List<String> policies;
 
 }

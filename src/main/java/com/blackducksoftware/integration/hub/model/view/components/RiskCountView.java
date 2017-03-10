@@ -35,61 +35,11 @@
 
 package com.blackducksoftware.integration.hub.model.view.components;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
 import com.blackducksoftware.integration.hub.model.enumeration.RiskCountEnum;
-import com.google.gson.annotations.SerializedName;
 
-/**
- * RiskCountView
- */
-public class RiskCountView {
-    @SerializedName("count")
-    private Integer count = null;
+public class RiskCountView extends HubComponent {
+    public Integer count;
 
-    @SerializedName("countType")
-    private RiskCountEnum countType = null;
-
-    public RiskCountView count(final Integer count) {
-        this.count = count;
-        return this;
-    }
-
-    /**
-     * The level of risk within the severity threshold
-     *
-     * @return count
-     **/
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(final Integer count) {
-        this.count = count;
-    }
-
-    public RiskCountView countType(final RiskCountEnum countType) {
-        this.countType = countType;
-        return this;
-    }
-
-    /**
-     * The level of severity being quantified
-     *
-     * @return countType
-     **/
-    public RiskCountEnum getCountType() {
-        return countType;
-    }
-
-    public void setCountType(final RiskCountEnum countType) {
-        this.countType = countType;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.JSON_STYLE);
-    }
+    public RiskCountEnum countType;
 
 }

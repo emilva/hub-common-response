@@ -23,30 +23,9 @@
  */
 package com.blackducksoftware.integration.hub.model.view.components;
 
-import org.apache.commons.lang3.builder.RecursiveToStringStyle;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+public class OptionItem extends HubComponent {
+    public String name;
 
-public class OptionItem {
-    private final String name;
-
-    private final String title;
-
-    public OptionItem(final String name, final String title) {
-        this.name = name;
-        this.title = title;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, RecursiveToStringStyle.JSON_STYLE);
-    }
+    public String title;
 
 }

@@ -25,68 +25,9 @@ package com.blackducksoftware.integration.hub.model.view.components;
 
 import java.util.List;
 
-import org.apache.commons.lang3.builder.RecursiveToStringStyle;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+public class PolicyRuleExpressionSet extends HubComponent {
+    public String operator;
 
-public class PolicyRuleExpressionSet {
-    private final String operator;
-
-    private final List<PolicyRuleExpression> expressions;
-
-    public PolicyRuleExpressionSet(final String operator, final List<PolicyRuleExpression> expressions) {
-        this.operator = operator;
-        this.expressions = expressions;
-    }
-
-    public String getOperator() {
-        return operator;
-    }
-
-    public List<PolicyRuleExpression> getExpressions() {
-        return expressions;
-    }
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((expressions == null) ? 0 : expressions.hashCode());
-        result = prime * result + ((operator == null) ? 0 : operator.hashCode());
-        return result;
-    }
-
-    @Override
-    public boolean equals(final Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (!(obj instanceof PolicyRuleExpressionSet)) {
-            return false;
-        }
-        final PolicyRuleExpressionSet other = (PolicyRuleExpressionSet) obj;
-        if (expressions == null) {
-            if (other.expressions != null) {
-                return false;
-            }
-        } else if (!expressions.equals(other.expressions)) {
-            return false;
-        }
-        if (operator == null) {
-            if (other.operator != null) {
-                return false;
-            }
-        } else if (!operator.equals(other.operator)) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, RecursiveToStringStyle.JSON_STYLE);
-    }
+    public List<PolicyRuleExpression> expressions;
 
 }

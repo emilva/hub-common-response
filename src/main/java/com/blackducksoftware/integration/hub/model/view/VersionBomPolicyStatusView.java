@@ -41,7 +41,7 @@ public class VersionBomPolicyStatusView extends HubView {
             return null;
         }
         for (final ComponentVersionStatusCount count : componentVersionStatusCounts) {
-            if (VersionBomPolicyStatusOverallStatusEnum.IN_VIOLATION == count.getName()) {
+            if (VersionBomPolicyStatusOverallStatusEnum.IN_VIOLATION == count.name) {
                 return count;
             }
         }
@@ -53,7 +53,7 @@ public class VersionBomPolicyStatusView extends HubView {
             return null;
         }
         for (final ComponentVersionStatusCount count : componentVersionStatusCounts) {
-            if (VersionBomPolicyStatusOverallStatusEnum.NOT_IN_VIOLATION == count.getName()) {
+            if (VersionBomPolicyStatusOverallStatusEnum.NOT_IN_VIOLATION == count.name) {
                 return count;
             }
         }
@@ -65,7 +65,7 @@ public class VersionBomPolicyStatusView extends HubView {
             return null;
         }
         for (final ComponentVersionStatusCount count : componentVersionStatusCounts) {
-            if (VersionBomPolicyStatusOverallStatusEnum.IN_VIOLATION_OVERRIDDEN == count.getName()) {
+            if (VersionBomPolicyStatusOverallStatusEnum.IN_VIOLATION_OVERRIDDEN == count.name) {
                 return count;
             }
         }
