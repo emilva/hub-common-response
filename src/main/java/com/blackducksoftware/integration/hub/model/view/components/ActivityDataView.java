@@ -37,6 +37,7 @@ package com.blackducksoftware.integration.hub.model.view.components;
 
 import java.util.Date;
 
+import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.ActivityDataTrendingEnum;
 
 public class ActivityDataView extends HubComponent {

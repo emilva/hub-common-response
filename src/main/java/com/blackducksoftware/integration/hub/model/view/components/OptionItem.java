@@ -23,6 +23,8 @@
  */
 package com.blackducksoftware.integration.hub.model.view.components;
 
+import com.blackducksoftware.integration.hub.model.HubComponent;
+
 public class OptionItem extends HubComponent {
     public String name;
 

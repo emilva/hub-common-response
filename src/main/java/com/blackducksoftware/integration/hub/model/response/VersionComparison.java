@@ -23,6 +23,8 @@
  */
 package com.blackducksoftware.integration.hub.model.response;
 
+import com.blackducksoftware.integration.hub.model.HubResponse;
+
 public class VersionComparison extends HubResponse {
     private final String consumerVersion;
 

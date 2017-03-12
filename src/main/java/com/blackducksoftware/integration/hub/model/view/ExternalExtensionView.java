@@ -23,6 +23,8 @@
  */
 package com.blackducksoftware.integration.hub.model.view;
 
+import com.blackducksoftware.integration.hub.model.HubView;
+
 public class ExternalExtensionView extends HubView {
     private String name;
 

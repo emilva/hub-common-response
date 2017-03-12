@@ -23,6 +23,7 @@
  */
 package com.blackducksoftware.integration.hub.model.view;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.google.gson.annotations.SerializedName;
 
 public class VulnerableComponentView extends HubView {

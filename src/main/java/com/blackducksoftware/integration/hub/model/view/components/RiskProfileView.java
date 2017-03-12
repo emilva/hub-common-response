@@ -38,6 +38,8 @@ package com.blackducksoftware.integration.hub.model.view.components;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.blackducksoftware.integration.hub.model.HubComponent;
+
 public class RiskProfileView extends HubComponent {
     public List<RiskCountView> counts = new ArrayList<>();
 

@@ -38,6 +38,7 @@ package com.blackducksoftware.integration.hub.model.view.components;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseEnum;
 
 public class VersionBomLicenseView extends HubComponent {

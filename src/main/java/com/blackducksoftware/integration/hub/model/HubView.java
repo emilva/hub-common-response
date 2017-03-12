@@ -21,14 +21,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.response;
-
-import com.blackducksoftware.integration.hub.model.view.components.HubComponent;
+package com.blackducksoftware.integration.hub.model;
 
 /**
- * All Hub API Responses should be marshalled to instances of this class.
+ * A marker class used when a HubResponse has the '_meta' property which, for now, must be determined manually by
+ * actually performing requests against Hub endpoints.
  */
-public class HubResponse extends HubComponent {
-    public String json;
+public class HubView extends HubResponse {
 
 }

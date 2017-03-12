@@ -35,6 +35,7 @@
 
 package com.blackducksoftware.integration.hub.model.view.components;
 
+import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.RiskCountEnum;
 
 public class RiskCountView extends HubComponent {

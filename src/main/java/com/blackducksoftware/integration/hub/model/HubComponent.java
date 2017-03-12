@@ -1,4 +1,4 @@
-package com.blackducksoftware.integration.hub.model.view.components;
+package com.blackducksoftware.integration.hub.model;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;

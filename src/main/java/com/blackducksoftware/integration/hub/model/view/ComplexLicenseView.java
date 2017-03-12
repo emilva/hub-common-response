@@ -25,6 +25,7 @@ package com.blackducksoftware.integration.hub.model.view;
 
 import java.util.List;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseCodeSharingEnum;
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseEnum;
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseOwnershipEnum;

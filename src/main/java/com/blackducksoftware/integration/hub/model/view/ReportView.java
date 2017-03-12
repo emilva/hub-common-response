@@ -25,6 +25,8 @@ package com.blackducksoftware.integration.hub.model.view;
 
 import java.util.Date;
 
+import com.blackducksoftware.integration.hub.model.HubView;
+
 public class ReportView extends HubView {
     private String reportFormat;
 

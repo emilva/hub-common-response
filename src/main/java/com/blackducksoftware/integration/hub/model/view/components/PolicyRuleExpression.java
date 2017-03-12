@@ -25,6 +25,8 @@ package com.blackducksoftware.integration.hub.model.view.components;
 
 import java.util.List;
 
+import com.blackducksoftware.integration.hub.model.HubComponent;
+
 public class PolicyRuleExpression extends HubComponent {
     public String name;
 

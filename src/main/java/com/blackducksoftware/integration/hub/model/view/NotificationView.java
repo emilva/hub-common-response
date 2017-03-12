@@ -25,6 +25,7 @@ package com.blackducksoftware.integration.hub.model.view;
 
 import java.util.Date;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.NotificationEnum;
 
 public class NotificationView extends HubView {

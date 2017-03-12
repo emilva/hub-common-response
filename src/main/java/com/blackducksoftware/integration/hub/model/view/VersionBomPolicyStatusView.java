@@ -26,6 +26,7 @@ package com.blackducksoftware.integration.hub.model.view;
 import java.util.Date;
 import java.util.List;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.VersionBomPolicyStatusOverallStatusEnum;
 import com.blackducksoftware.integration.hub.model.view.components.ComponentVersionStatusCount;
 
