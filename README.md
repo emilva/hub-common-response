@@ -1,1 +1,1 @@
-# hub-response-common
+# hub-common-response
