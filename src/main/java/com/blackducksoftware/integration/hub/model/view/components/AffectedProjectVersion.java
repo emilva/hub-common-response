@@ -32,4 +32,6 @@ public class AffectedProjectVersion extends HubComponent {
 
     public String projectVersion;
 
+    public String componentIssueUrl;
+
 }

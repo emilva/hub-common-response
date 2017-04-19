@@ -46,4 +46,6 @@ public class ComponentVersionStatus extends HubComponent {
 
     public List<String> policies;
 
+    public String componentIssueLink;
+
 }
