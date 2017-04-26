@@ -38,4 +38,6 @@ public class IssueView extends HubView {
     public String issueStatus;
 
     public String issueUpdatedAt;
+
+    public String issueLink;
 }
