@@ -28,8 +28,4 @@ import com.blackducksoftware.integration.hub.model.view.components.RuleViolation
 public class RuleViolationClearedNotificationView extends NotificationView {
     public RuleViolationClearedNotificationContent content;
 
-    public RuleViolationClearedNotificationContent getContent() {
-        return content;
-    }
-
 }

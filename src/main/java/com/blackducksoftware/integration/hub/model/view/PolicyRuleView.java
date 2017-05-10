@@ -29,58 +29,22 @@ import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.view.components.PolicyRuleExpressionSet;
 
 public class PolicyRuleView extends HubView {
-    private String name;
+    public String name;
 
-    private String description;
+    public String description;
 
-    private Boolean enabled;
+    public Boolean enabled;
 
-    private Boolean overridable;
+    public Boolean overridable;
 
-    private PolicyRuleExpressionSet expression;
+    public PolicyRuleExpressionSet expression;
 
-    private Date createdAt;
+    public Date createdAt;
 
-    private String createdBy;
+    public String createdBy;
 
-    private Date updatedAt;
+    public Date updatedAt;
 
-    private String updatedBy;
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public Boolean getEnabled() {
-        return enabled;
-    }
-
-    public Boolean getOverridable() {
-        return overridable;
-    }
-
-    public PolicyRuleExpressionSet getExpression() {
-        return expression;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
+    public String updatedBy;
 
 }

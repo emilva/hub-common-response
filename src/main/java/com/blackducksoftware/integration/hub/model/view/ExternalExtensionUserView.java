@@ -26,15 +26,8 @@ package com.blackducksoftware.integration.hub.model.view;
 import com.blackducksoftware.integration.hub.model.HubView;
 
 public class ExternalExtensionUserView extends HubView {
-    private String user;
+    public String user;
 
-    private String extensionOptions;
+    public String extensionOptions;
 
-    public String getUser() {
-        return user;
-    }
-
-    public String getExtensionOptions() {
-        return extensionOptions;
-    }
 }

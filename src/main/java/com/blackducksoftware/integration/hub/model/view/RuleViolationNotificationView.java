@@ -28,8 +28,4 @@ import com.blackducksoftware.integration.hub.model.view.components.RuleViolation
 public class RuleViolationNotificationView extends NotificationView {
     public RuleViolationNotificationContent content;
 
-    public RuleViolationNotificationContent getContent() {
-        return content;
-    }
-
 }
