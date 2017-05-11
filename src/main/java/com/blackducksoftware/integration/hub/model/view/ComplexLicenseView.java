@@ -31,39 +31,45 @@ import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseEnu
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseOwnershipEnum;
 
 public class ComplexLicenseView extends HubView {
-    private ComplexLicenseCodeSharingEnum codeSharing;
+	private ComplexLicenseCodeSharingEnum codeSharing;
 
-    private String license;
+	private String license;
 
-    private String name;
+	private String name;
 
-    private ComplexLicenseOwnershipEnum ownership;
+	private ComplexLicenseOwnershipEnum ownership;
 
-    private ComplexLicenseEnum type;
+	private ComplexLicenseEnum type;
 
-    private List<ComplexLicenseView> licenses;
+	private List<ComplexLicenseView> licenses;
 
-    public ComplexLicenseCodeSharingEnum getCodeSharing() {
-        return codeSharing;
-    }
+	private String licenseDisplay;
 
-    public String getLicense() {
-        return license;
-    }
+	public ComplexLicenseCodeSharingEnum getCodeSharing() {
+		return codeSharing;
+	}
 
-    public List<ComplexLicenseView> getLicenses() {
-        return licenses;
-    }
+	public String getLicense() {
+		return license;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public List<ComplexLicenseView> getLicenses() {
+		return licenses;
+	}
 
-    public ComplexLicenseOwnershipEnum getOwnership() {
-        return ownership;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public ComplexLicenseEnum getType() {
-        return type;
-    }
+	public String getLicenseDisplay() {
+		return licenseDisplay;
+	}
+
+	public ComplexLicenseOwnershipEnum getOwnership() {
+		return ownership;
+	}
+
+	public ComplexLicenseEnum getType() {
+		return type;
+	}
 }
