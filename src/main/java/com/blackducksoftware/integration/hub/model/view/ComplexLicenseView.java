@@ -42,4 +42,6 @@ public class ComplexLicenseView extends HubView {
     public ComplexLicenseEnum type;
 
     public List<ComplexLicenseView> licenses;
+
+    public String licenseDisplay;
 }
