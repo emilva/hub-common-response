@@ -21,31 +21,23 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view.components;
+package com.blackducksoftware.integration.hub.model.view;
 
-import java.util.List;
+import com.blackducksoftware.integration.hub.model.HubView;
 
-import com.blackducksoftware.integration.hub.model.HubComponent;
-import com.google.gson.annotations.SerializedName;
+public class IssueView extends HubView {
 
-public class ComponentVersionStatus extends HubComponent {
-    public String componentName;
+    public String issueAssignee;
 
-    // If version is specified, componentVersionLink will be populated
-    // otherwise it will be null
-    @SerializedName("componentVersion")
-    public String componentVersionLink;
+    public String issueCreatedAt;
 
-    // If version is not specified, componentLink will be populated
-    // otherwise it will be null
-    @SerializedName("component")
-    public String componentLink;
+    public String issueDescription;
 
-    @SerializedName("bomComponentVersionPolicyStatus")
-    public String bomComponentVersionPolicyStatusLink;
+    public String issueId;
 
-    public List<String> policies;
+    public String issueStatus;
 
-    public String componentIssueLink;
+    public String issueUpdatedAt;
 
+    public String issueLink;
 }
