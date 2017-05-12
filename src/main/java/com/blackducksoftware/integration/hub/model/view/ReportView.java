@@ -28,52 +28,20 @@ import java.util.Date;
 import com.blackducksoftware.integration.hub.model.HubView;
 
 public class ReportView extends HubView {
-    private String reportFormat;
+    public String reportFormat;
 
-    private String locale;
+    public String locale;
 
-    private String fileName;
+    public String fileName;
 
-    private int fileSize;
+    public int fileSize;
 
-    private Date createdAt;
+    public Date createdAt;
 
-    private Date updatedAt;
+    public Date updatedAt;
 
-    private Date finishedAt;
+    public Date finishedAt;
 
-    private String createdBy;
-
-    public String getReportFormat() {
-        return reportFormat;
-    }
-
-    public String getLocale() {
-        return locale;
-    }
-
-    public String getFileName() {
-        return fileName;
-    }
-
-    public int getFileSize() {
-        return fileSize;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public Date getFinishedAt() {
-        return finishedAt;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
+    public String createdBy;
 
 }

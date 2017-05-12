@@ -28,37 +28,17 @@ import com.blackducksoftware.integration.hub.model.enumeration.ProjectSourceEnum
 
 public class ProjectView extends HubView {
     // description from Hub API: "The general identifier of the project"
-    private String name;
+    public String name;
 
     // description from Hub API: "Summary of what the project represents in terms of functionality and use"
-    private String description;
+    public String description;
 
     // description from Hub API: "Whether BOM level adjustments are applied at the project level (to all releases)"
-    private boolean projectLevelAdjustments;
+    public boolean projectLevelAdjustments;
 
     // description from Hub API: "Allowed values : [1,2,3,4,5]"
-    private int projectTier;
+    public int projectTier;
 
-    private ProjectSourceEnum source;
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public boolean isProjectLevelAdjustments() {
-        return projectLevelAdjustments;
-    }
-
-    public int getProjectTier() {
-        return projectTier;
-    }
-
-    public ProjectSourceEnum getSource() {
-        return source;
-    }
+    public ProjectSourceEnum source;
 
 }

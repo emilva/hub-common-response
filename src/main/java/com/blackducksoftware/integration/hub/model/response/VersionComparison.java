@@ -26,36 +26,11 @@ package com.blackducksoftware.integration.hub.model.response;
 import com.blackducksoftware.integration.hub.model.HubResponse;
 
 public class VersionComparison extends HubResponse {
-    private final String consumerVersion;
+    public String consumerVersion;
 
-    private final String producerVersion;
+    public String producerVersion;
 
-    private final Integer numericResult;
+    public Integer numericResult;
 
-    private final String operatorResult;
-
-    public VersionComparison(final String consumerVersion, final String producerVersion, final Integer numericResult,
-            final String operatorResult) {
-        this.consumerVersion = consumerVersion;
-        this.producerVersion = producerVersion;
-        this.numericResult = numericResult;
-        this.operatorResult = operatorResult;
-    }
-
-    public String getConsumerVersion() {
-        return consumerVersion;
-    }
-
-    public String getProducerVersion() {
-        return producerVersion;
-    }
-
-    public Integer getNumericResult() {
-        return numericResult;
-    }
-
-    public String getOperatorResult() {
-        return operatorResult;
-    }
-
+    public String operatorResult;
 }

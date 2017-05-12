@@ -35,16 +35,4 @@ public class NotificationView extends HubView {
 
     public Date createdAt;
 
-    public String getContentType() {
-        return contentType;
-    }
-
-    public NotificationEnum getType() {
-        return type;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
 }

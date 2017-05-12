@@ -30,52 +30,20 @@ import com.blackducksoftware.integration.hub.model.enumeration.ExternalExtension
 import com.blackducksoftware.integration.hub.model.view.components.OptionItem;
 
 public class ExternalExtensionConfigValueView extends HubView {
-    private String name;
+    public String name;
 
-    private ExternalExtensionConfigValueOptionEnum optionType;
+    public ExternalExtensionConfigValueOptionEnum optionType;
 
-    private String title;
+    public String title;
 
-    private boolean required;
+    public boolean required;
 
-    private boolean singleValue;
+    public boolean singleValue;
 
-    private String description;
+    public String description;
 
-    private List<OptionItem> options;
+    public List<OptionItem> options;
 
-    private List<String> value;
-
-    public String getName() {
-        return name;
-    }
-
-    public ExternalExtensionConfigValueOptionEnum getOptionType() {
-        return optionType;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public boolean isRequired() {
-        return required;
-    }
-
-    public boolean isSingleValue() {
-        return singleValue;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public List<OptionItem> getOptions() {
-        return options;
-    }
-
-    public List<String> getValue() {
-        return value;
-    }
+    public List<String> value;
 
 }

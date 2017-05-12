@@ -31,58 +31,9 @@ import com.blackducksoftware.integration.hub.model.enumeration.VersionBomPolicyS
 import com.blackducksoftware.integration.hub.model.view.components.ComponentVersionStatusCount;
 
 public class VersionBomPolicyStatusView extends HubView {
-    private VersionBomPolicyStatusOverallStatusEnum overallStatus;
+    public VersionBomPolicyStatusOverallStatusEnum overallStatus;
 
-    private Date updatedAt;
+    public Date updatedAt;
 
-    private List<ComponentVersionStatusCount> componentVersionStatusCounts;
-
-    public ComponentVersionStatusCount getCountInViolation() {
-        if (componentVersionStatusCounts == null || componentVersionStatusCounts.isEmpty()) {
-            return null;
-        }
-        for (final ComponentVersionStatusCount count : componentVersionStatusCounts) {
-            if (VersionBomPolicyStatusOverallStatusEnum.IN_VIOLATION == count.name) {
-                return count;
-            }
-        }
-        return null;
-    }
-
-    public ComponentVersionStatusCount getCountNotInViolation() {
-        if (componentVersionStatusCounts == null || componentVersionStatusCounts.isEmpty()) {
-            return null;
-        }
-        for (final ComponentVersionStatusCount count : componentVersionStatusCounts) {
-            if (VersionBomPolicyStatusOverallStatusEnum.NOT_IN_VIOLATION == count.name) {
-                return count;
-            }
-        }
-        return null;
-    }
-
-    public ComponentVersionStatusCount getCountInViolationOverridden() {
-        if (componentVersionStatusCounts == null || componentVersionStatusCounts.isEmpty()) {
-            return null;
-        }
-        for (final ComponentVersionStatusCount count : componentVersionStatusCounts) {
-            if (VersionBomPolicyStatusOverallStatusEnum.IN_VIOLATION_OVERRIDDEN == count.name) {
-                return count;
-            }
-        }
-        return null;
-    }
-
-    public VersionBomPolicyStatusOverallStatusEnum getOverallStatus() {
-        return overallStatus;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public List<ComponentVersionStatusCount> getComponentVersionStatusCounts() {
-        return componentVersionStatusCounts;
-    }
-
+    public List<ComponentVersionStatusCount> componentVersionStatusCounts;
 }
