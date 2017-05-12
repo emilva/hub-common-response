@@ -41,6 +41,13 @@ import java.util.List;
 import com.blackducksoftware.integration.hub.model.HubComponent;
 
 public class RiskProfileView extends HubComponent {
-    public List<RiskCountView> counts = new ArrayList<>();
+    private List<RiskCountView> counts = new ArrayList<>();
 
+    public List<RiskCountView> getCounts() {
+        return counts;
+    }
+
+    public void setCounts(final List<RiskCountView> counts) {
+        this.counts = counts;
+    }
 }

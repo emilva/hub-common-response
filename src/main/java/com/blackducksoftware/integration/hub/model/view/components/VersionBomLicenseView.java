@@ -42,12 +42,43 @@ import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseEnum;
 
 public class VersionBomLicenseView extends HubComponent {
-    public String license;
+    private String license;
 
-    public String licenseDisplay;
+    private String licenseDisplay;
 
-    public ComplexLicenseEnum licenseType;
+    private ComplexLicenseEnum licenseType;
 
-    public List<VersionBomLicenseView> licenses = new ArrayList<>();
+    private List<VersionBomLicenseView> licenses = new ArrayList<>();
 
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(final String license) {
+        this.license = license;
+    }
+
+    public String getLicenseDisplay() {
+        return licenseDisplay;
+    }
+
+    public void setLicenseDisplay(final String licenseDisplay) {
+        this.licenseDisplay = licenseDisplay;
+    }
+
+    public ComplexLicenseEnum getLicenseType() {
+        return licenseType;
+    }
+
+    public void setLicenseType(final ComplexLicenseEnum licenseType) {
+        this.licenseType = licenseType;
+    }
+
+    public List<VersionBomLicenseView> getLicenses() {
+        return licenses;
+    }
+
+    public void setLicenses(final List<VersionBomLicenseView> licenses) {
+        this.licenses = licenses;
+    }
 }

@@ -26,6 +26,13 @@ package com.blackducksoftware.integration.hub.model.view;
 import com.blackducksoftware.integration.hub.model.view.components.RuleViolationNotificationContent;
 
 public class RuleViolationNotificationView extends NotificationView {
-    public RuleViolationNotificationContent content;
+    private RuleViolationNotificationContent content;
 
+    public RuleViolationNotificationContent getContent() {
+        return content;
+    }
+
+    public void setContent(final RuleViolationNotificationContent content) {
+        this.content = content;
+    }
 }

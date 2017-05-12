@@ -29,34 +29,121 @@ import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.google.gson.annotations.SerializedName;
 
 public class PolicyOverrideNotificationContent extends HubComponent {
-    public String projectName;
+    private String projectName;
 
-    public String projectVersionName;
+    private String projectVersionName;
 
-    public String componentName;
+    private String componentName;
 
-    public String componentVersionName;
+    private String componentVersionName;
 
-    public String firstName;
+    private String firstName;
 
-    public String lastName;
+    private String lastName;
 
     @SerializedName("projectVersion")
-    public String projectVersionLink;
+    private String projectVersionLink;
 
     // If version is specified, componentVersionLink will be populated
     // otherwise it will be null
     @SerializedName("componentVersion")
-    public String componentVersionLink;
+    private String componentVersionLink;
 
     // If version is not specified, componentLink will be populated
     // otherwise it will be null
     @SerializedName("component")
-    public String componentLink;
+    private String componentLink;
 
     @SerializedName("bomComponentVersionPolicyStatus")
-    public String bomComponentVersionPolicyStatusLink;
+    private String bomComponentVersionPolicyStatusLink;
 
-    public List<String> policies;
+    private List<String> policies;
 
+    public String getProjectName() {
+        return projectName;
+    }
+
+    public void setProjectName(final String projectName) {
+        this.projectName = projectName;
+    }
+
+    public String getProjectVersionName() {
+        return projectVersionName;
+    }
+
+    public void setProjectVersionName(final String projectVersionName) {
+        this.projectVersionName = projectVersionName;
+    }
+
+    public String getComponentName() {
+        return componentName;
+    }
+
+    public void setComponentName(final String componentName) {
+        this.componentName = componentName;
+    }
+
+    public String getComponentVersionName() {
+        return componentVersionName;
+    }
+
+    public void setComponentVersionName(final String componentVersionName) {
+        this.componentVersionName = componentVersionName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(final String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(final String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getProjectVersionLink() {
+        return projectVersionLink;
+    }
+
+    public void setProjectVersionLink(final String projectVersionLink) {
+        this.projectVersionLink = projectVersionLink;
+    }
+
+    public String getComponentVersionLink() {
+        return componentVersionLink;
+    }
+
+    public void setComponentVersionLink(final String componentVersionLink) {
+        this.componentVersionLink = componentVersionLink;
+    }
+
+    public String getComponentLink() {
+        return componentLink;
+    }
+
+    public void setComponentLink(final String componentLink) {
+        this.componentLink = componentLink;
+    }
+
+    public String getBomComponentVersionPolicyStatusLink() {
+        return bomComponentVersionPolicyStatusLink;
+    }
+
+    public void setBomComponentVersionPolicyStatusLink(final String bomComponentVersionPolicyStatusLink) {
+        this.bomComponentVersionPolicyStatusLink = bomComponentVersionPolicyStatusLink;
+    }
+
+    public List<String> getPolicies() {
+        return policies;
+    }
+
+    public void setPolicies(final List<String> policies) {
+        this.policies = policies;
+    }
 }

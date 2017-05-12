@@ -26,8 +26,23 @@ package com.blackducksoftware.integration.hub.model.view.components;
 import com.blackducksoftware.integration.hub.model.HubComponent;
 
 public class OptionItem extends HubComponent {
-    public String name;
+    private String name;
 
-    public String title;
+    private String title;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(final String title) {
+        this.title = title;
+    }
 }

@@ -30,20 +30,84 @@ import com.blackducksoftware.integration.hub.model.enumeration.ExternalExtension
 import com.blackducksoftware.integration.hub.model.view.components.OptionItem;
 
 public class ExternalExtensionConfigValueView extends HubView {
-    public String name;
+    private String name;
 
-    public ExternalExtensionConfigValueOptionEnum optionType;
+    private ExternalExtensionConfigValueOptionEnum optionType;
 
-    public String title;
+    private String title;
 
-    public boolean required;
+    private boolean required;
 
-    public boolean singleValue;
+    private boolean singleValue;
 
-    public String description;
+    private String description;
 
-    public List<OptionItem> options;
+    private List<OptionItem> options;
 
-    public List<String> value;
+    private List<String> value;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public ExternalExtensionConfigValueOptionEnum getOptionType() {
+        return optionType;
+    }
+
+    public void setOptionType(final ExternalExtensionConfigValueOptionEnum optionType) {
+        this.optionType = optionType;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(final String title) {
+        this.title = title;
+    }
+
+    public boolean isRequired() {
+        return required;
+    }
+
+    public void setRequired(final boolean required) {
+        this.required = required;
+    }
+
+    public boolean isSingleValue() {
+        return singleValue;
+    }
+
+    public void setSingleValue(final boolean singleValue) {
+        this.singleValue = singleValue;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(final String description) {
+        this.description = description;
+    }
+
+    public List<OptionItem> getOptions() {
+        return options;
+    }
+
+    public void setOptions(final List<OptionItem> options) {
+        this.options = options;
+    }
+
+    public List<String> getValue() {
+        return value;
+    }
+
+    public void setValue(final List<String> value) {
+        this.value = value;
+    }
 
 }

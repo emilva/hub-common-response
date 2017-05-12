@@ -27,15 +27,55 @@ import com.blackducksoftware.integration.hub.model.HubResponse;
 
 public class ComponentSearchResultResponse extends HubResponse {
     // ****URL**** //
-    public String component;
+    private String component;
 
-    public String componentName;
+    private String componentName;
 
-    public String originId;
+    private String originId;
 
     // ****URL**** //
-    public String version;
+    private String version;
 
-    public String versionName;
+    private String versionName;
+
+    public String getComponent() {
+        return component;
+    }
+
+    public void setComponent(final String component) {
+        this.component = component;
+    }
+
+    public String getComponentName() {
+        return componentName;
+    }
+
+    public void setComponentName(final String componentName) {
+        this.componentName = componentName;
+    }
+
+    public String getOriginId() {
+        return originId;
+    }
+
+    public void setOriginId(final String originId) {
+        this.originId = originId;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(final String version) {
+        this.version = version;
+    }
+
+    public String getVersionName() {
+        return versionName;
+    }
+
+    public void setVersionName(final String versionName) {
+        this.versionName = versionName;
+    }
 
 }

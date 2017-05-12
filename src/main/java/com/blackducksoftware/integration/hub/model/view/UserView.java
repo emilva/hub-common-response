@@ -27,16 +27,63 @@ import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.UserGroupCreatedFromEnum;
 
 public class UserView extends HubView {
-    public String userName;
+    private String userName;
 
-    public String firstName;
+    private String firstName;
 
-    public String lastName;
+    private String lastName;
 
-    public String email;
+    private String email;
 
-    public UserGroupCreatedFromEnum type;
+    private UserGroupCreatedFromEnum type;
 
-    public Boolean active;
+    private Boolean active;
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(final String userName) {
+        this.userName = userName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(final String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(final String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(final String email) {
+        this.email = email;
+    }
+
+    public UserGroupCreatedFromEnum getType() {
+        return type;
+    }
+
+    public void setType(final UserGroupCreatedFromEnum type) {
+        this.type = type;
+    }
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(final Boolean active) {
+        this.active = active;
+    }
 }

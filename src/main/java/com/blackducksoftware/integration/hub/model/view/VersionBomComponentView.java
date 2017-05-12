@@ -48,41 +48,145 @@ import com.google.gson.annotations.SerializedName;
 
 public class VersionBomComponentView extends HubView {
     @SerializedName("activityData")
-    public ActivityDataView activityData = null;
+    private ActivityDataView activityData = null;
 
     @SerializedName("activityRiskProfile")
-    public RiskProfileView activityRiskProfile = null;
+    private RiskProfileView activityRiskProfile = null;
 
     @SerializedName("component")
-    public String component = null;
+    private String component = null;
 
     @SerializedName("componentName")
-    public String componentName = null;
+    private String componentName = null;
 
     @SerializedName("componentVersion")
-    public String componentVersion = null;
+    private String componentVersion = null;
 
     @SerializedName("componentVersionName")
-    public String componentVersionName = null;
+    private String componentVersionName = null;
 
     @SerializedName("licenseRiskProfile")
-    public RiskProfileView licenseRiskProfile = null;
+    private RiskProfileView licenseRiskProfile = null;
 
     @SerializedName("licenses")
-    public List<VersionBomLicenseView> licenses = new ArrayList<>();
+    private List<VersionBomLicenseView> licenses = new ArrayList<>();
 
     @SerializedName("operationalRiskProfile")
-    public RiskProfileView operationalRiskProfile = null;
+    private RiskProfileView operationalRiskProfile = null;
 
     @SerializedName("releasedOn")
-    public Date releasedOn = null;
+    private Date releasedOn = null;
 
     @SerializedName("securityRiskProfile")
-    public RiskProfileView securityRiskProfile = null;
+    private RiskProfileView securityRiskProfile = null;
 
     @SerializedName("usages")
-    public List<MatchedFileUsageEnum> usages = new ArrayList<>();
+    private List<MatchedFileUsageEnum> usages = new ArrayList<>();
 
     @SerializedName("versionRiskProfile")
-    public RiskProfileView versionRiskProfile = null;
+    private RiskProfileView versionRiskProfile = null;
+
+    public ActivityDataView getActivityData() {
+        return activityData;
+    }
+
+    public void setActivityData(final ActivityDataView activityData) {
+        this.activityData = activityData;
+    }
+
+    public RiskProfileView getActivityRiskProfile() {
+        return activityRiskProfile;
+    }
+
+    public void setActivityRiskProfile(final RiskProfileView activityRiskProfile) {
+        this.activityRiskProfile = activityRiskProfile;
+    }
+
+    public String getComponent() {
+        return component;
+    }
+
+    public void setComponent(final String component) {
+        this.component = component;
+    }
+
+    public String getComponentName() {
+        return componentName;
+    }
+
+    public void setComponentName(final String componentName) {
+        this.componentName = componentName;
+    }
+
+    public String getComponentVersion() {
+        return componentVersion;
+    }
+
+    public void setComponentVersion(final String componentVersion) {
+        this.componentVersion = componentVersion;
+    }
+
+    public String getComponentVersionName() {
+        return componentVersionName;
+    }
+
+    public void setComponentVersionName(final String componentVersionName) {
+        this.componentVersionName = componentVersionName;
+    }
+
+    public RiskProfileView getLicenseRiskProfile() {
+        return licenseRiskProfile;
+    }
+
+    public void setLicenseRiskProfile(final RiskProfileView licenseRiskProfile) {
+        this.licenseRiskProfile = licenseRiskProfile;
+    }
+
+    public List<VersionBomLicenseView> getLicenses() {
+        return licenses;
+    }
+
+    public void setLicenses(final List<VersionBomLicenseView> licenses) {
+        this.licenses = licenses;
+    }
+
+    public RiskProfileView getOperationalRiskProfile() {
+        return operationalRiskProfile;
+    }
+
+    public void setOperationalRiskProfile(final RiskProfileView operationalRiskProfile) {
+        this.operationalRiskProfile = operationalRiskProfile;
+    }
+
+    public Date getReleasedOn() {
+        return releasedOn;
+    }
+
+    public void setReleasedOn(final Date releasedOn) {
+        this.releasedOn = releasedOn;
+    }
+
+    public RiskProfileView getSecurityRiskProfile() {
+        return securityRiskProfile;
+    }
+
+    public void setSecurityRiskProfile(final RiskProfileView securityRiskProfile) {
+        this.securityRiskProfile = securityRiskProfile;
+    }
+
+    public List<MatchedFileUsageEnum> getUsages() {
+        return usages;
+    }
+
+    public void setUsages(final List<MatchedFileUsageEnum> usages) {
+        this.usages = usages;
+    }
+
+    public RiskProfileView getVersionRiskProfile() {
+        return versionRiskProfile;
+    }
+
+    public void setVersionRiskProfile(final RiskProfileView versionRiskProfile) {
+        this.versionRiskProfile = versionRiskProfile;
+    }
 }

@@ -31,9 +31,33 @@ import com.blackducksoftware.integration.hub.model.enumeration.VersionBomPolicyS
 import com.blackducksoftware.integration.hub.model.view.components.ComponentVersionStatusCount;
 
 public class VersionBomPolicyStatusView extends HubView {
-    public VersionBomPolicyStatusOverallStatusEnum overallStatus;
+    private VersionBomPolicyStatusOverallStatusEnum overallStatus;
 
-    public Date updatedAt;
+    private Date updatedAt;
 
-    public List<ComponentVersionStatusCount> componentVersionStatusCounts;
+    private List<ComponentVersionStatusCount> componentVersionStatusCounts;
+
+    public VersionBomPolicyStatusOverallStatusEnum getOverallStatus() {
+        return overallStatus;
+    }
+
+    public void setOverallStatus(final VersionBomPolicyStatusOverallStatusEnum overallStatus) {
+        this.overallStatus = overallStatus;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(final Date updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public List<ComponentVersionStatusCount> getComponentVersionStatusCounts() {
+        return componentVersionStatusCounts;
+    }
+
+    public void setComponentVersionStatusCounts(final List<ComponentVersionStatusCount> componentVersionStatusCounts) {
+        this.componentVersionStatusCounts = componentVersionStatusCounts;
+    }
 }

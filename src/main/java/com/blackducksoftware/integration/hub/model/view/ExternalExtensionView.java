@@ -26,11 +26,43 @@ package com.blackducksoftware.integration.hub.model.view;
 import com.blackducksoftware.integration.hub.model.HubView;
 
 public class ExternalExtensionView extends HubView {
-    public String name;
+    private String name;
 
-    public String description;
+    private String description;
 
-    public String infoUrl;
+    private String infoUrl;
 
-    public Boolean authenticated;
+    private Boolean authenticated;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(final String description) {
+        this.description = description;
+    }
+
+    public String getInfoUrl() {
+        return infoUrl;
+    }
+
+    public void setInfoUrl(final String infoUrl) {
+        this.infoUrl = infoUrl;
+    }
+
+    public Boolean getAuthenticated() {
+        return authenticated;
+    }
+
+    public void setAuthenticated(final Boolean authenticated) {
+        this.authenticated = authenticated;
+    }
 }

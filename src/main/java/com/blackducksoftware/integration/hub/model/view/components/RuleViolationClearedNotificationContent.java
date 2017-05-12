@@ -29,15 +29,54 @@ import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.google.gson.annotations.SerializedName;
 
 public class RuleViolationClearedNotificationContent extends HubComponent {
-    public String projectName;
+    private String projectName;
 
-    public String projectVersionName;
+    private String projectVersionName;
 
-    public int componentVersionsInViolation;
+    private int componentVersionsInViolation;
 
-    public List<ComponentVersionStatus> componentVersionStatuses;
+    private List<ComponentVersionStatus> componentVersionStatuses;
 
     @SerializedName("projectVersion")
-    public String projectVersionLink;
+    private String projectVersionLink;
 
+    public String getProjectName() {
+        return projectName;
+    }
+
+    public void setProjectName(final String projectName) {
+        this.projectName = projectName;
+    }
+
+    public String getProjectVersionName() {
+        return projectVersionName;
+    }
+
+    public void setProjectVersionName(final String projectVersionName) {
+        this.projectVersionName = projectVersionName;
+    }
+
+    public int getComponentVersionsInViolation() {
+        return componentVersionsInViolation;
+    }
+
+    public void setComponentVersionsInViolation(final int componentVersionsInViolation) {
+        this.componentVersionsInViolation = componentVersionsInViolation;
+    }
+
+    public List<ComponentVersionStatus> getComponentVersionStatuses() {
+        return componentVersionStatuses;
+    }
+
+    public void setComponentVersionStatuses(final List<ComponentVersionStatus> componentVersionStatuses) {
+        this.componentVersionStatuses = componentVersionStatuses;
+    }
+
+    public String getProjectVersionLink() {
+        return projectVersionLink;
+    }
+
+    public void setProjectVersionLink(final String projectVersionLink) {
+        this.projectVersionLink = projectVersionLink;
+    }
 }
