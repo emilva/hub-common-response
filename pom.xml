@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>hub-common-response</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>bundle</packaging>
 
   <name>Hub Common Response</name>

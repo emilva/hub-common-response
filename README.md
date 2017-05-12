@@ -1,4 +1,3 @@
-# hub-common-response
 ## Overview ## 
 The hub-common-response library supplies model objects for the hub rest Api's 
 
