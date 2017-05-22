@@ -26,74 +26,18 @@ package com.blackducksoftware.integration.hub.model.view;
 import com.blackducksoftware.integration.hub.model.HubView;
 
 public class IssueView extends HubView {
+    public String issueAssignee;
 
-    private String issueAssignee;
+    public String issueCreatedAt;
 
-    private String issueCreatedAt;
+    public String issueDescription;
 
-    private String issueDescription;
+    public String issueId;
 
-    private String issueId;
+    public String issueStatus;
 
-    private String issueStatus;
+    public String issueUpdatedAt;
 
-    private String issueUpdatedAt;
+    public String issueLink;
 
-    private String issueLink;
-
-    public String getIssueAssignee() {
-        return issueAssignee;
-    }
-
-    public void setIssueAssignee(final String issueAssignee) {
-        this.issueAssignee = issueAssignee;
-    }
-
-    public String getIssueCreatedAt() {
-        return issueCreatedAt;
-    }
-
-    public void setIssueCreatedAt(final String issueCreatedAt) {
-        this.issueCreatedAt = issueCreatedAt;
-    }
-
-    public String getIssueDescription() {
-        return issueDescription;
-    }
-
-    public void setIssueDescription(final String issueDescription) {
-        this.issueDescription = issueDescription;
-    }
-
-    public String getIssueId() {
-        return issueId;
-    }
-
-    public void setIssueId(final String issueId) {
-        this.issueId = issueId;
-    }
-
-    public String getIssueStatus() {
-        return issueStatus;
-    }
-
-    public void setIssueStatus(final String issueStatus) {
-        this.issueStatus = issueStatus;
-    }
-
-    public String getIssueUpdatedAt() {
-        return issueUpdatedAt;
-    }
-
-    public void setIssueUpdatedAt(final String issueUpdatedAt) {
-        this.issueUpdatedAt = issueUpdatedAt;
-    }
-
-    public String getIssueLink() {
-        return issueLink;
-    }
-
-    public void setIssueLink(final String issueLink) {
-        this.issueLink = issueLink;
-    }
 }

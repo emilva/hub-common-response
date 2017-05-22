@@ -28,33 +28,10 @@ import com.blackducksoftware.integration.hub.model.enumeration.LicenseCodeSharin
 import com.blackducksoftware.integration.hub.model.enumeration.LicenseOwnershipEnum;
 
 public class LicenseView extends HubView {
-    private LicenseCodeSharingEnum codeSharing;
+    public LicenseCodeSharingEnum codeSharing;
 
-    private String name;
+    public String name;
 
-    private LicenseOwnershipEnum ownership;
+    public LicenseOwnershipEnum ownership;
 
-    public LicenseCodeSharingEnum getCodeSharing() {
-        return codeSharing;
-    }
-
-    public void setCodeSharing(final LicenseCodeSharingEnum codeSharing) {
-        this.codeSharing = codeSharing;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
-    }
-
-    public LicenseOwnershipEnum getOwnership() {
-        return ownership;
-    }
-
-    public void setOwnership(final LicenseOwnershipEnum ownership) {
-        this.ownership = ownership;
-    }
 }

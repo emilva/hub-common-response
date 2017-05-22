@@ -28,83 +28,20 @@ import java.util.Date;
 import com.blackducksoftware.integration.hub.model.HubView;
 
 public class ReportView extends HubView {
-    private String reportFormat;
+    public String reportFormat;
 
-    private String locale;
+    public String locale;
 
-    private String fileName;
+    public String fileName;
 
-    private int fileSize;
+    public int fileSize;
 
-    private Date createdAt;
+    public Date createdAt;
 
-    private Date updatedAt;
+    public Date updatedAt;
 
-    private Date finishedAt;
+    public Date finishedAt;
 
-    private String createdBy;
+    public String createdBy;
 
-    public String getReportFormat() {
-        return reportFormat;
-    }
-
-    public void setReportFormat(final String reportFormat) {
-        this.reportFormat = reportFormat;
-    }
-
-    public String getLocale() {
-        return locale;
-    }
-
-    public void setLocale(final String locale) {
-        this.locale = locale;
-    }
-
-    public String getFileName() {
-        return fileName;
-    }
-
-    public void setFileName(final String fileName) {
-        this.fileName = fileName;
-    }
-
-    public int getFileSize() {
-        return fileSize;
-    }
-
-    public void setFileSize(final int fileSize) {
-        this.fileSize = fileSize;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(final Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(final Date updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public Date getFinishedAt() {
-        return finishedAt;
-    }
-
-    public void setFinishedAt(final Date finishedAt) {
-        this.finishedAt = finishedAt;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(final String createdBy) {
-        this.createdBy = createdBy;
-    }
 }

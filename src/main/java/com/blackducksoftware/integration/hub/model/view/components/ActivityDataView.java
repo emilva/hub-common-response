@@ -41,43 +41,12 @@ import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.ActivityDataTrendingEnum;
 
 public class ActivityDataView extends HubComponent {
-    private Long commitCount12Month;
+    public Long commitCount12Month;
 
-    private Long contributorCount12Month;
+    public Long contributorCount12Month;
 
-    private Date lastCommitDate;
+    public Date lastCommitDate;
 
-    private ActivityDataTrendingEnum trending;
+    public ActivityDataTrendingEnum trending;
 
-    public Long getCommitCount12Month() {
-        return commitCount12Month;
-    }
-
-    public void setCommitCount12Month(final Long commitCount12Month) {
-        this.commitCount12Month = commitCount12Month;
-    }
-
-    public Long getContributorCount12Month() {
-        return contributorCount12Month;
-    }
-
-    public void setContributorCount12Month(final Long contributorCount12Month) {
-        this.contributorCount12Month = contributorCount12Month;
-    }
-
-    public Date getLastCommitDate() {
-        return lastCommitDate;
-    }
-
-    public void setLastCommitDate(final Date lastCommitDate) {
-        this.lastCommitDate = lastCommitDate;
-    }
-
-    public ActivityDataTrendingEnum getTrending() {
-        return trending;
-    }
-
-    public void setTrending(final ActivityDataTrendingEnum trending) {
-        this.trending = trending;
-    }
 }

@@ -29,93 +29,22 @@ import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.view.components.PolicyRuleExpressionSet;
 
 public class PolicyRuleView extends HubView {
-    private String name;
+    public String name;
 
-    private String description;
+    public String description;
 
-    private Boolean enabled;
+    public Boolean enabled;
 
-    private Boolean overridable;
+    public Boolean overridable;
 
-    private PolicyRuleExpressionSet expression;
+    public PolicyRuleExpressionSet expression;
 
-    private Date createdAt;
+    public Date createdAt;
 
-    private String createdBy;
+    public String createdBy;
 
-    private Date updatedAt;
+    public Date updatedAt;
 
-    private String updatedBy;
+    public String updatedBy;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(final String description) {
-        this.description = description;
-    }
-
-    public Boolean getEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(final Boolean enabled) {
-        this.enabled = enabled;
-    }
-
-    public Boolean getOverridable() {
-        return overridable;
-    }
-
-    public void setOverridable(final Boolean overridable) {
-        this.overridable = overridable;
-    }
-
-    public PolicyRuleExpressionSet getExpression() {
-        return expression;
-    }
-
-    public void setExpression(final PolicyRuleExpressionSet expression) {
-        this.expression = expression;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(final Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(final String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(final Date updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
-
-    public void setUpdatedBy(final String updatedBy) {
-        this.updatedBy = updatedBy;
-    }
 }

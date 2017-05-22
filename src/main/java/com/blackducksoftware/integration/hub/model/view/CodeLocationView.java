@@ -29,65 +29,17 @@ import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.CodeLocationEnum;
 
 public class CodeLocationView extends HubView {
-    private CodeLocationEnum type;
+    public CodeLocationEnum type;
 
-    private String url;
+    public String url;
 
     // Since Hub 3.5
-    private String name;
+    public String name;
 
-    private String mappedProjectVersion;
+    public String mappedProjectVersion;
 
-    private Date createdAt;
+    public Date createdAt;
 
-    private Date updatedAt;
-
-    public CodeLocationEnum getType() {
-        return type;
-    }
-
-    public void setType(final CodeLocationEnum type) {
-        this.type = type;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(final String url) {
-        this.url = url;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
-    }
-
-    public String getMappedProjectVersion() {
-        return mappedProjectVersion;
-    }
-
-    public void setMappedProjectVersion(final String mappedProjectVersion) {
-        this.mappedProjectVersion = mappedProjectVersion;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(final Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(final Date updatedAt) {
-        this.updatedAt = updatedAt;
-    }
+    public Date updatedAt;
 
 }

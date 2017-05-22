@@ -31,73 +31,18 @@ import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseEnu
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseOwnershipEnum;
 
 public class ComplexLicenseView extends HubView {
-    private ComplexLicenseCodeSharingEnum codeSharing;
+    public ComplexLicenseCodeSharingEnum codeSharing;
 
-    private String license;
+    public String license;
 
-    private String name;
+    public String name;
 
-    private ComplexLicenseOwnershipEnum ownership;
+    public ComplexLicenseOwnershipEnum ownership;
 
-    private ComplexLicenseEnum type;
+    public ComplexLicenseEnum type;
 
-    private List<ComplexLicenseView> licenses;
+    public List<ComplexLicenseView> licenses;
 
-    private String licenseDisplay;
+    public String licenseDisplay;
 
-    public ComplexLicenseCodeSharingEnum getCodeSharing() {
-        return codeSharing;
-    }
-
-    public void setCodeSharing(final ComplexLicenseCodeSharingEnum codeSharing) {
-        this.codeSharing = codeSharing;
-    }
-
-    public String getLicense() {
-        return license;
-    }
-
-    public void setLicense(final String license) {
-        this.license = license;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
-    }
-
-    public ComplexLicenseOwnershipEnum getOwnership() {
-        return ownership;
-    }
-
-    public void setOwnership(final ComplexLicenseOwnershipEnum ownership) {
-        this.ownership = ownership;
-    }
-
-    public ComplexLicenseEnum getType() {
-        return type;
-    }
-
-    public void setType(final ComplexLicenseEnum type) {
-        this.type = type;
-    }
-
-    public List<ComplexLicenseView> getLicenses() {
-        return licenses;
-    }
-
-    public void setLicenses(final List<ComplexLicenseView> licenses) {
-        this.licenses = licenses;
-    }
-
-    public String getLicenseDisplay() {
-        return licenseDisplay;
-    }
-
-    public void setLicenseDisplay(final String licenseDisplay) {
-        this.licenseDisplay = licenseDisplay;
-    }
 }

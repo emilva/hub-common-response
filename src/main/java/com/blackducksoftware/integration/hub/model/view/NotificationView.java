@@ -29,33 +29,10 @@ import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.NotificationEnum;
 
 public class NotificationView extends HubView {
-    private String contentType;
+    public String contentType;
 
-    private NotificationEnum type;
+    public NotificationEnum type;
 
-    private Date createdAt;
+    public Date createdAt;
 
-    public String getContentType() {
-        return contentType;
-    }
-
-    public void setContentType(final String contentType) {
-        this.contentType = contentType;
-    }
-
-    public NotificationEnum getType() {
-        return type;
-    }
-
-    public void setType(final NotificationEnum type) {
-        this.type = type;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(final Date createdAt) {
-        this.createdAt = createdAt;
-    }
 }

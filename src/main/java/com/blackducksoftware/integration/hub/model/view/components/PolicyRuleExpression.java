@@ -28,33 +28,10 @@ import java.util.List;
 import com.blackducksoftware.integration.hub.model.HubComponent;
 
 public class PolicyRuleExpression extends HubComponent {
-    private String name;
+    public String name;
 
-    private String operation;
+    public String operation;
 
-    private List<PolicyRuleExpressionValue> values;
+    public List<PolicyRuleExpressionValue> values;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
-    }
-
-    public String getOperation() {
-        return operation;
-    }
-
-    public void setOperation(final String operation) {
-        this.operation = operation;
-    }
-
-    public List<PolicyRuleExpressionValue> getValues() {
-        return values;
-    }
-
-    public void setValues(final List<PolicyRuleExpressionValue> values) {
-        this.values = values;
-    }
 }

@@ -29,43 +29,12 @@ import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.ScanSummaryStatusEnum;
 
 public class ScanSummaryView extends HubView {
-    private ScanSummaryStatusEnum status;
+    public ScanSummaryStatusEnum status;
 
-    private String statusMessage;
+    public String statusMessage;
 
-    private Date createdAt;
+    public Date createdAt;
 
-    private Date updatedAt;
+    public Date updatedAt;
 
-    public ScanSummaryStatusEnum getStatus() {
-        return status;
-    }
-
-    public void setStatus(final ScanSummaryStatusEnum status) {
-        this.status = status;
-    }
-
-    public String getStatusMessage() {
-        return statusMessage;
-    }
-
-    public void setStatusMessage(final String statusMessage) {
-        this.statusMessage = statusMessage;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(final Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(final Date updatedAt) {
-        this.updatedAt = updatedAt;
-    }
 }

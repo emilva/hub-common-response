@@ -28,23 +28,8 @@ import java.util.List;
 import com.blackducksoftware.integration.hub.model.HubComponent;
 
 public class PolicyRuleExpressionSet extends HubComponent {
-    private String operator;
+    public String operator;
 
-    private List<PolicyRuleExpression> expressions;
+    public List<PolicyRuleExpression> expressions;
 
-    public String getOperator() {
-        return operator;
-    }
-
-    public void setOperator(final String operator) {
-        this.operator = operator;
-    }
-
-    public List<PolicyRuleExpression> getExpressions() {
-        return expressions;
-    }
-
-    public void setExpressions(final List<PolicyRuleExpression> expressions) {
-        this.expressions = expressions;
-    }
 }

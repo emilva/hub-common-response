@@ -31,84 +31,21 @@ import com.blackducksoftware.integration.hub.model.enumeration.ProjectVersionPha
 import com.blackducksoftware.integration.hub.model.enumeration.ProjectVersionSourceEnum;
 
 public class ProjectVersionView extends HubView {
-    private ProjectVersionDistributionEnum distribution;
+    public ProjectVersionDistributionEnum distribution;
 
-    private ComplexLicenseView license;
+    public ComplexLicenseView license;
 
-    private String nickname;
+    public String nickname;
 
-    private ProjectVersionPhaseEnum phase;
+    public ProjectVersionPhaseEnum phase;
 
-    private String releaseComments;
+    public String releaseComments;
 
-    private Date releasedOn;
+    public Date releasedOn;
 
     // description from Hub API: "Read-Only; No matter the value it will always default to 'CUSTOM'",
-    private ProjectVersionSourceEnum source;
+    public ProjectVersionSourceEnum source;
 
-    private String versionName;
+    public String versionName;
 
-    public ProjectVersionDistributionEnum getDistribution() {
-        return distribution;
-    }
-
-    public void setDistribution(final ProjectVersionDistributionEnum distribution) {
-        this.distribution = distribution;
-    }
-
-    public ComplexLicenseView getLicense() {
-        return license;
-    }
-
-    public void setLicense(final ComplexLicenseView license) {
-        this.license = license;
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(final String nickname) {
-        this.nickname = nickname;
-    }
-
-    public ProjectVersionPhaseEnum getPhase() {
-        return phase;
-    }
-
-    public void setPhase(final ProjectVersionPhaseEnum phase) {
-        this.phase = phase;
-    }
-
-    public String getReleaseComments() {
-        return releaseComments;
-    }
-
-    public void setReleaseComments(final String releaseComments) {
-        this.releaseComments = releaseComments;
-    }
-
-    public Date getReleasedOn() {
-        return releasedOn;
-    }
-
-    public void setReleasedOn(final Date releasedOn) {
-        this.releasedOn = releasedOn;
-    }
-
-    public ProjectVersionSourceEnum getSource() {
-        return source;
-    }
-
-    public void setSource(final ProjectVersionSourceEnum source) {
-        this.source = source;
-    }
-
-    public String getVersionName() {
-        return versionName;
-    }
-
-    public void setVersionName(final String versionName) {
-        this.versionName = versionName;
-    }
 }

@@ -27,23 +27,8 @@ import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.VersionBomPolicyStatusOverallStatusEnum;
 
 public class ComponentVersionStatusCount extends HubComponent {
-    private VersionBomPolicyStatusOverallStatusEnum name;
+    public VersionBomPolicyStatusOverallStatusEnum name;
 
-    private int value;
+    public int value;
 
-    public VersionBomPolicyStatusOverallStatusEnum getName() {
-        return name;
-    }
-
-    public void setName(final VersionBomPolicyStatusOverallStatusEnum name) {
-        this.name = name;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(final int value) {
-        this.value = value;
-    }
 }

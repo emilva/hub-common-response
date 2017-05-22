@@ -37,14 +37,10 @@ public enum PolicyRuleConditionEnum {
     LOW_SEVERITY_VULN_COUNT("Low Severity Vulnerability Count"),
     UNKNOWN_RULE_CONDTION("Unknown Rule Condition");
 
-    private final String displayValue;
+    public final String displayValue;
 
     private PolicyRuleConditionEnum(final String displayValue) {
         this.displayValue = displayValue;
-    }
-
-    public String getDisplayValue() {
-        return displayValue;
     }
 
 }

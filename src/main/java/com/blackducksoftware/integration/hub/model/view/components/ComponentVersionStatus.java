@@ -29,70 +29,23 @@ import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.google.gson.annotations.SerializedName;
 
 public class ComponentVersionStatus extends HubComponent {
-    private String componentName;
+    public String componentName;
 
     // If version is specified, componentVersionLink will be populated
     // otherwise it will be null
     @SerializedName("componentVersion")
-    private String componentVersionLink;
+    public String componentVersionLink;
 
     // If version is not specified, componentLink will be populated
     // otherwise it will be null
     @SerializedName("component")
-    private String componentLink;
+    public String componentLink;
 
     @SerializedName("bomComponentVersionPolicyStatus")
-    private String bomComponentVersionPolicyStatusLink;
+    public String bomComponentVersionPolicyStatusLink;
 
-    private List<String> policies;
+    public List<String> policies;
 
-    private String componentIssueLink;
+    public String componentIssueLink;
 
-    public String getComponentName() {
-        return componentName;
-    }
-
-    public void setComponentName(final String componentName) {
-        this.componentName = componentName;
-    }
-
-    public String getComponentVersionLink() {
-        return componentVersionLink;
-    }
-
-    public void setComponentVersionLink(final String componentVersionLink) {
-        this.componentVersionLink = componentVersionLink;
-    }
-
-    public String getComponentLink() {
-        return componentLink;
-    }
-
-    public void setComponentLink(final String componentLink) {
-        this.componentLink = componentLink;
-    }
-
-    public String getBomComponentVersionPolicyStatusLink() {
-        return bomComponentVersionPolicyStatusLink;
-    }
-
-    public void setBomComponentVersionPolicyStatusLink(final String bomComponentVersionPolicyStatusLink) {
-        this.bomComponentVersionPolicyStatusLink = bomComponentVersionPolicyStatusLink;
-    }
-
-    public List<String> getPolicies() {
-        return policies;
-    }
-
-    public void setPolicies(final List<String> policies) {
-        this.policies = policies;
-    }
-
-    public String getComponentIssueLink() {
-        return componentIssueLink;
-    }
-
-    public void setComponentIssueLink(final String componentIssueLink) {
-        this.componentIssueLink = componentIssueLink;
-    }
 }

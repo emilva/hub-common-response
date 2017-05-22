@@ -27,33 +27,10 @@ import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.ComponentSourceEnum;
 
 public class ComponentView extends HubView {
-    private String description;
+    public String description;
 
-    private String name;
+    public String name;
 
-    private ComponentSourceEnum source;
+    public ComponentSourceEnum source;
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(final String description) {
-        this.description = description;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(final String name) {
-        this.name = name;
-    }
-
-    public ComponentSourceEnum getSource() {
-        return source;
-    }
-
-    public void setSource(final ComponentSourceEnum source) {
-        this.source = source;
-    }
 }

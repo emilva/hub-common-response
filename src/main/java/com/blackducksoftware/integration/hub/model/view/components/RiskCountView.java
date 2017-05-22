@@ -39,23 +39,8 @@ import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.RiskCountEnum;
 
 public class RiskCountView extends HubComponent {
-    private Integer count;
+    public Integer count;
 
-    private RiskCountEnum countType;
+    public RiskCountEnum countType;
 
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(final Integer count) {
-        this.count = count;
-    }
-
-    public RiskCountEnum getCountType() {
-        return countType;
-    }
-
-    public void setCountType(final RiskCountEnum countType) {
-        this.countType = countType;
-    }
 }

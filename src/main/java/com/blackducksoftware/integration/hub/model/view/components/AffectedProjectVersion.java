@@ -26,43 +26,12 @@ package com.blackducksoftware.integration.hub.model.view.components;
 import com.blackducksoftware.integration.hub.model.HubComponent;
 
 public class AffectedProjectVersion extends HubComponent {
-    private String projectName;
+    public String projectName;
 
-    private String projectVersionName;
+    public String projectVersionName;
 
-    private String projectVersion;
+    public String projectVersion;
 
-    private String componentIssueUrl;
+    public String componentIssueUrl;
 
-    public String getProjectName() {
-        return projectName;
-    }
-
-    public void setProjectName(final String projectName) {
-        this.projectName = projectName;
-    }
-
-    public String getProjectVersionName() {
-        return projectVersionName;
-    }
-
-    public void setProjectVersionName(final String projectVersionName) {
-        this.projectVersionName = projectVersionName;
-    }
-
-    public String getProjectVersion() {
-        return projectVersion;
-    }
-
-    public void setProjectVersion(final String projectVersion) {
-        this.projectVersion = projectVersion;
-    }
-
-    public String getComponentIssueUrl() {
-        return componentIssueUrl;
-    }
-
-    public void setComponentIssueUrl(final String componentIssueUrl) {
-        this.componentIssueUrl = componentIssueUrl;
-    }
 }
