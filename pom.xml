@@ -5,12 +5,12 @@
   <parent>
     <groupId>com.blackducksoftware.integration</groupId>
     <artifactId>common-maven-parent</artifactId>
-    <version>3.0.0</version>
+    <version>4.0.0</version>
   </parent>
 
   <artifactId>hub-common-response</artifactId>
-  <version>2.0.1-SNAPSHOT</version>
-  <packaging>bundle</packaging>
+  <version>3.0.0</version>
+  <packaging>jar</packaging>
 
   <name>Hub Common Response</name>
   <description>A library for describing Black Duck Hub requests and responses.</description>
