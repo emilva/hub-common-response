@@ -23,50 +23,18 @@
  */
 package com.blackducksoftware.integration.hub.model.view;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.google.gson.annotations.SerializedName;
 
 public class VulnerableComponentView extends HubView {
-    private String componentName;
+    public String componentName;
 
-    private String componentVersionName;
+    public String componentVersionName;
 
     @SerializedName("componentVersion")
-    private String componentVersionLink;
+    public String componentVersionLink;
 
-    private VulnerabilityWithRemediationView vulnerabilityWithRemediation;
+    public VulnerabilityWithRemediationView vulnerabilityWithRemediation;
 
     // Also in Hub's response: License
-
-    public String getComponentName() {
-        return componentName;
-    }
-
-    public void setComponentName(final String componentName) {
-        this.componentName = componentName;
-    }
-
-    public String getComponentVersionName() {
-        return componentVersionName;
-    }
-
-    public void setComponentVersionName(final String componentVersionName) {
-        this.componentVersionName = componentVersionName;
-    }
-
-    public String getComponentVersionLink() {
-        return componentVersionLink;
-    }
-
-    public void setComponentVersionLink(final String componentVersionLink) {
-        this.componentVersionLink = componentVersionLink;
-    }
-
-    public VulnerabilityWithRemediationView getVulnerabilityWithRemediation() {
-        return vulnerabilityWithRemediation;
-    }
-
-    public void setVulnerabilityWithRemediation(final VulnerabilityWithRemediationView vulnerabilityWithRemediation) {
-        this.vulnerabilityWithRemediation = vulnerabilityWithRemediation;
-    }
-
 }

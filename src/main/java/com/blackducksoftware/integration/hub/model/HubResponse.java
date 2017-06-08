@@ -21,13 +21,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view.components;
+package com.blackducksoftware.integration.hub.model;
 
-import com.blackducksoftware.integration.hub.model.HubComponent;
-
-public class VulnerabilitySourceQualifiedId extends HubComponent {
-    public String source;
-
-    public String vulnerabilityId;
+/**
+ * All Hub API Responses should be marshalled to instances of this class.
+ */
+public class HubResponse extends HubComponent {
+    public String json;
 
 }

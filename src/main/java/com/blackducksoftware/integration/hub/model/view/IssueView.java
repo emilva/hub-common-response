@@ -23,12 +23,21 @@
  */
 package com.blackducksoftware.integration.hub.model.view;
 
-import com.blackducksoftware.integration.hub.model.response.HubResponse;
+import com.blackducksoftware.integration.hub.model.HubView;
 
-/**
- * A marker class used when a HubResponse has the '_meta' property which, for now, must be determined manually by
- * actually performing requests against Hub endpoints.
- */
-public class HubView extends HubResponse {
+public class IssueView extends HubView {
+    public String issueAssignee;
+
+    public String issueCreatedAt;
+
+    public String issueDescription;
+
+    public String issueId;
+
+    public String issueStatus;
+
+    public String issueUpdatedAt;
+
+    public String issueLink;
 
 }

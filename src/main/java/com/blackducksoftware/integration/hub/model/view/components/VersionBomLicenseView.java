@@ -38,108 +38,16 @@ package com.blackducksoftware.integration.hub.model.view.components;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
+import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseEnum;
-import com.google.gson.annotations.SerializedName;
 
-/**
- * VersionBomLicenseView
- */
-public class VersionBomLicenseView {
-    @SerializedName("license")
-    private String license = null;
+public class VersionBomLicenseView extends HubComponent {
+    public String license;
 
-    @SerializedName("licenseDisplay")
-    private String licenseDisplay = null;
+    public String licenseDisplay;
 
-    @SerializedName("licenseType")
-    private ComplexLicenseEnum licenseType = null;
+    public ComplexLicenseEnum licenseType;
 
-    @SerializedName("licenses")
-    private List<VersionBomLicenseView> licenses = new ArrayList<>();
-
-    public VersionBomLicenseView license(final String license) {
-        this.license = license;
-        return this;
-    }
-
-    /**
-     * Reference to the full representation of the license
-     *
-     * @return license
-     **/
-    public String getLicense() {
-        return license;
-    }
-
-    public void setLicense(final String license) {
-        this.license = license;
-    }
-
-    public VersionBomLicenseView licenseDisplay(final String licenseDisplay) {
-        this.licenseDisplay = licenseDisplay;
-        return this;
-    }
-
-    /**
-     * Label distinguishing the license from other licenses
-     *
-     * @return licenseDisplay
-     **/
-    public String getLicenseDisplay() {
-        return licenseDisplay;
-    }
-
-    public void setLicenseDisplay(final String licenseDisplay) {
-        this.licenseDisplay = licenseDisplay;
-    }
-
-    public VersionBomLicenseView licenseType(final ComplexLicenseEnum licenseType) {
-        this.licenseType = licenseType;
-        return this;
-    }
-
-    /**
-     * How this license is related to other licenses within a given context
-     *
-     * @return licenseType
-     **/
-    public ComplexLicenseEnum getLicenseType() {
-        return licenseType;
-    }
-
-    public void setLicenseType(final ComplexLicenseEnum licenseType) {
-        this.licenseType = licenseType;
-    }
-
-    public VersionBomLicenseView licenses(final List<VersionBomLicenseView> licenses) {
-        this.licenses = licenses;
-        return this;
-    }
-
-    public VersionBomLicenseView addLicensesItem(final VersionBomLicenseView licensesItem) {
-        this.licenses.add(licensesItem);
-        return this;
-    }
-
-    /**
-     * Additional licenses related to this license via the provided type
-     *
-     * @return licenses
-     **/
-    public List<VersionBomLicenseView> getLicenses() {
-        return licenses;
-    }
-
-    public void setLicenses(final List<VersionBomLicenseView> licenses) {
-        this.licenses = licenses;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.JSON_STYLE);
-    }
+    public List<VersionBomLicenseView> licenses = new ArrayList<>();
 
 }

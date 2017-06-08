@@ -25,68 +25,27 @@ package com.blackducksoftware.integration.hub.model.view.components;
 
 import java.util.List;
 
-import org.apache.commons.lang3.builder.RecursiveToStringStyle;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-
+import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.google.gson.annotations.SerializedName;
 
-public class ComponentVersionStatus {
-    private String componentName;
+public class ComponentVersionStatus extends HubComponent {
+    public String componentName;
 
     // If version is specified, componentVersionLink will be populated
     // otherwise it will be null
     @SerializedName("componentVersion")
-    private String componentVersionLink;
+    public String componentVersionLink;
 
     // If version is not specified, componentLink will be populated
     // otherwise it will be null
     @SerializedName("component")
-    private String componentLink;
+    public String componentLink;
 
     @SerializedName("bomComponentVersionPolicyStatus")
-    private String bomComponentVersionPolicyStatusLink;
+    public String bomComponentVersionPolicyStatusLink;
 
-    private List<String> policies;
+    public List<String> policies;
 
-    public String getComponentName() {
-        return componentName;
-    }
-
-    public String getComponentVersionLink() {
-        return componentVersionLink;
-    }
-
-    public String getComponentLink() {
-        return componentLink;
-    }
-
-    public String getBomComponentVersionPolicyStatusLink() {
-        return bomComponentVersionPolicyStatusLink;
-    }
-
-    public void setComponentName(final String componentName) {
-        this.componentName = componentName;
-    }
-
-    public void setComponentVersionLink(final String componentVersionLink) {
-        this.componentVersionLink = componentVersionLink;
-    }
-
-    public void setBomComponentVersionPolicyStatusLink(final String bomComponentVersionPolicyStatusLink) {
-        this.bomComponentVersionPolicyStatusLink = bomComponentVersionPolicyStatusLink;
-    }
-
-    public List<String> getPolicies() {
-        return policies;
-    }
-
-    public void setPolicies(final List<String> policies) {
-        this.policies = policies;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, RecursiveToStringStyle.JSON_STYLE);
-    }
+    public String componentIssueLink;
 
 }

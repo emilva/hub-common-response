@@ -25,6 +25,7 @@ package com.blackducksoftware.integration.hub.model.view;
 
 import java.util.Date;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.NotificationEnum;
 
 public class NotificationView extends HubView {
@@ -33,17 +34,5 @@ public class NotificationView extends HubView {
     public NotificationEnum type;
 
     public Date createdAt;
-
-    public String getContentType() {
-        return contentType;
-    }
-
-    public NotificationEnum getType() {
-        return type;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
 
 }

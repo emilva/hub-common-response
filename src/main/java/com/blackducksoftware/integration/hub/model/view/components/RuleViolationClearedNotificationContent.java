@@ -25,66 +25,19 @@ package com.blackducksoftware.integration.hub.model.view.components;
 
 import java.util.List;
 
-import org.apache.commons.lang3.builder.RecursiveToStringStyle;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-
+import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.google.gson.annotations.SerializedName;
 
-public class RuleViolationClearedNotificationContent {
-    private String projectName;
+public class RuleViolationClearedNotificationContent extends HubComponent {
+    public String projectName;
 
-    private String projectVersionName;
+    public String projectVersionName;
 
-    private int componentVersionsInViolation;
+    public int componentVersionsInViolation;
 
-    private List<ComponentVersionStatus> componentVersionStatuses;
+    public List<ComponentVersionStatus> componentVersionStatuses;
 
     @SerializedName("projectVersion")
-    private String projectVersionLink;
-
-    public String getProjectName() {
-        return projectName;
-    }
-
-    public String getProjectVersionName() {
-        return projectVersionName;
-    }
-
-    public int getComponentVersionsInViolation() {
-        return componentVersionsInViolation;
-    }
-
-    public List<ComponentVersionStatus> getComponentVersionStatuses() {
-        return componentVersionStatuses;
-    }
-
-    public String getProjectVersionLink() {
-        return projectVersionLink;
-    }
-
-    public void setProjectName(final String projectName) {
-        this.projectName = projectName;
-    }
-
-    public void setProjectVersionName(final String projectVersionName) {
-        this.projectVersionName = projectVersionName;
-    }
-
-    public void setComponentVersionsInViolation(final int componentVersionsInViolation) {
-        this.componentVersionsInViolation = componentVersionsInViolation;
-    }
-
-    public void setComponentVersionStatuses(final List<ComponentVersionStatus> componentVersionStatuses) {
-        this.componentVersionStatuses = componentVersionStatuses;
-    }
-
-    public void setProjectVersionLink(final String projectVersionLink) {
-        this.projectVersionLink = projectVersionLink;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, RecursiveToStringStyle.JSON_STYLE);
-    }
+    public String projectVersionLink;
 
 }

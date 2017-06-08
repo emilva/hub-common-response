@@ -23,37 +23,19 @@
  */
 package com.blackducksoftware.integration.hub.model.response;
 
+import com.blackducksoftware.integration.hub.model.HubResponse;
+
 public class ComponentSearchResultResponse extends HubResponse {
     // ****URL**** //
-    private String component;
+    public String component;
 
-    private String componentName;
+    public String componentName;
 
-    private String originId;
+    public String originId;
 
     // ****URL**** //
-    private String version;
+    public String version;
 
-    private String versionName;
-
-    public String getComponent() {
-        return component;
-    }
-
-    public String getComponentName() {
-        return componentName;
-    }
-
-    public String getOriginId() {
-        return originId;
-    }
-
-    public String getVersion() {
-        return version;
-    }
-
-    public String getVersionName() {
-        return versionName;
-    }
+    public String versionName;
 
 }

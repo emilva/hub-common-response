@@ -25,44 +25,24 @@ package com.blackducksoftware.integration.hub.model.view;
 
 import java.util.List;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseCodeSharingEnum;
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseEnum;
 import com.blackducksoftware.integration.hub.model.enumeration.ComplexLicenseOwnershipEnum;
 
 public class ComplexLicenseView extends HubView {
-    private ComplexLicenseCodeSharingEnum codeSharing;
+    public ComplexLicenseCodeSharingEnum codeSharing;
 
-    private String license;
+    public String license;
 
-    private String name;
+    public String name;
 
-    private ComplexLicenseOwnershipEnum ownership;
+    public ComplexLicenseOwnershipEnum ownership;
 
-    private ComplexLicenseEnum type;
+    public ComplexLicenseEnum type;
 
-    private List<ComplexLicenseView> licenses;
+    public List<ComplexLicenseView> licenses;
 
-    public ComplexLicenseCodeSharingEnum getCodeSharing() {
-        return codeSharing;
-    }
+    public String licenseDisplay;
 
-    public String getLicense() {
-        return license;
-    }
-
-    public List<ComplexLicenseView> getLicenses() {
-        return licenses;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public ComplexLicenseOwnershipEnum getOwnership() {
-        return ownership;
-    }
-
-    public ComplexLicenseEnum getType() {
-        return type;
-    }
 }

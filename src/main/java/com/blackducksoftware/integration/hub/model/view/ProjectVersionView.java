@@ -25,58 +25,27 @@ package com.blackducksoftware.integration.hub.model.view;
 
 import java.util.Date;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.ProjectVersionDistributionEnum;
 import com.blackducksoftware.integration.hub.model.enumeration.ProjectVersionPhaseEnum;
 import com.blackducksoftware.integration.hub.model.enumeration.ProjectVersionSourceEnum;
 
 public class ProjectVersionView extends HubView {
-    private ProjectVersionDistributionEnum distribution;
+    public ProjectVersionDistributionEnum distribution;
 
-    private ComplexLicenseView license;
+    public ComplexLicenseView license;
 
-    private String nickname;
+    public String nickname;
 
-    private ProjectVersionPhaseEnum phase;
+    public ProjectVersionPhaseEnum phase;
 
-    private String releaseComments;
+    public String releaseComments;
 
-    private Date releasedOn;
+    public Date releasedOn;
 
     // description from Hub API: "Read-Only; No matter the value it will always default to 'CUSTOM'",
-    private ProjectVersionSourceEnum source;
+    public ProjectVersionSourceEnum source;
 
-    private String versionName;
-
-    public ProjectVersionDistributionEnum getDistribution() {
-        return distribution;
-    }
-
-    public ComplexLicenseView getLicense() {
-        return license;
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public ProjectVersionPhaseEnum getPhase() {
-        return phase;
-    }
-
-    public String getReleaseComments() {
-        return releaseComments;
-    }
-
-    public Date getReleasedOn() {
-        return releasedOn;
-    }
-
-    public ProjectVersionSourceEnum getSource() {
-        return source;
-    }
-
-    public String getVersionName() {
-        return versionName;
-    }
+    public String versionName;
 
 }

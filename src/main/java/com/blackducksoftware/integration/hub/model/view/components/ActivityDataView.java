@@ -37,103 +37,16 @@ package com.blackducksoftware.integration.hub.model.view.components;
 
 import java.util.Date;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
+import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.ActivityDataTrendingEnum;
-import com.google.gson.annotations.SerializedName;
 
-/**
- * ActivityDataView
- */
-public class ActivityDataView {
-    @SerializedName("commitCount12Month")
-    private Long commitCount12Month = null;
+public class ActivityDataView extends HubComponent {
+    public Long commitCount12Month;
 
-    @SerializedName("contributorCount12Month")
-    private Long contributorCount12Month = null;
+    public Long contributorCount12Month;
 
-    @SerializedName("lastCommitDate")
-    private Date lastCommitDate = null;
+    public Date lastCommitDate;
 
-    @SerializedName("trending")
-    private ActivityDataTrendingEnum trending = null;
-
-    public ActivityDataView commitCount12Month(final Long commitCount12Month) {
-        this.commitCount12Month = commitCount12Month;
-        return this;
-    }
-
-    /**
-     * The number of commits in a 12 month period
-     *
-     * @return commitCount12Month
-     **/
-    public Long getCommitCount12Month() {
-        return commitCount12Month;
-    }
-
-    public void setCommitCount12Month(final Long commitCount12Month) {
-        this.commitCount12Month = commitCount12Month;
-    }
-
-    public ActivityDataView contributorCount12Month(final Long contributorCount12Month) {
-        this.contributorCount12Month = contributorCount12Month;
-        return this;
-    }
-
-    /**
-     * The number of contributors in a 12 month period
-     *
-     * @return contributorCount12Month
-     **/
-    public Long getContributorCount12Month() {
-        return contributorCount12Month;
-    }
-
-    public void setContributorCount12Month(final Long contributorCount12Month) {
-        this.contributorCount12Month = contributorCount12Month;
-    }
-
-    public ActivityDataView lastCommitDate(final Date lastCommitDate) {
-        this.lastCommitDate = lastCommitDate;
-        return this;
-    }
-
-    /**
-     * The last time a commit was made to the project
-     *
-     * @return lastCommitDate
-     **/
-    public Date getLastCommitDate() {
-        return lastCommitDate;
-    }
-
-    public void setLastCommitDate(final Date lastCommitDate) {
-        this.lastCommitDate = lastCommitDate;
-    }
-
-    public ActivityDataView trending(final ActivityDataTrendingEnum trending) {
-        this.trending = trending;
-        return this;
-    }
-
-    /**
-     * The overall characteristics of development activity
-     *
-     * @return trending
-     **/
-    public ActivityDataTrendingEnum getTrending() {
-        return trending;
-    }
-
-    public void setTrending(final ActivityDataTrendingEnum trending) {
-        this.trending = trending;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.JSON_STYLE);
-    }
+    public ActivityDataTrendingEnum trending;
 
 }

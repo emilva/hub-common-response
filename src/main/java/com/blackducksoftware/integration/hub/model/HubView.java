@@ -21,13 +21,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view.components;
+package com.blackducksoftware.integration.hub.model;
 
-import com.blackducksoftware.integration.hub.model.HubComponent;
-
-public class VulnerabilitySourceQualifiedId extends HubComponent {
-    public String source;
-
-    public String vulnerabilityId;
+/**
+ * A marker class used when a HubResponse has the '_meta' property which, for now, must be determined manually by
+ * actually performing requests against Hub endpoints.
+ */
+public class HubView extends HubResponse {
 
 }

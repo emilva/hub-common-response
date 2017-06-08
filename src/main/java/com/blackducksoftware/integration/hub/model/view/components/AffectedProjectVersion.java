@@ -23,49 +23,15 @@
  */
 package com.blackducksoftware.integration.hub.model.view.components;
 
-import org.apache.commons.lang3.builder.RecursiveToStringStyle;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import com.blackducksoftware.integration.hub.model.HubComponent;
 
-import com.google.gson.annotations.SerializedName;
+public class AffectedProjectVersion extends HubComponent {
+    public String projectName;
 
-/**
- * An object of this class represents one item in an affectedProjectVersion list returned by the Hub.
- */
-public class AffectedProjectVersion {
+    public String projectVersionName;
 
-    private String projectName;
+    public String projectVersion;
 
-    private String projectVersionName;
+    public String componentIssueUrl;
 
-    @SerializedName("projectVersion")
-    private String url;
-
-    public String getProjectName() {
-        return projectName;
-    }
-
-    public String getProjectVersionName() {
-        return projectVersionName;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setProjectName(final String projectName) {
-        this.projectName = projectName;
-    }
-
-    public void setProjectVersionName(final String projectVersionName) {
-        this.projectVersionName = projectVersionName;
-    }
-
-    public void setUrl(final String url) {
-        this.url = url;
-    }
-
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, RecursiveToStringStyle.JSON_STYLE);
-    }
 }

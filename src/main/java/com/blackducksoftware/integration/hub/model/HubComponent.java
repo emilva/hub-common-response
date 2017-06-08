@@ -21,19 +21,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.response;
+package com.blackducksoftware.integration.hub.model;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.RecursiveToStringStyle;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-/**
- * All Hub API Responses should be marshalled in to instances of this class.
- */
-public class HubResponse {
-    public String json;
-
+public class HubComponent {
     @Override
     public int hashCode() {
         return HashCodeBuilder.reflectionHashCode(this);

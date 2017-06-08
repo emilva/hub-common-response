@@ -25,31 +25,16 @@ package com.blackducksoftware.integration.hub.model.view;
 
 import java.util.Date;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.ComponentVersionSourceEnum;
 
 public class ComponentVersionView extends HubView {
-    private ComplexLicenseView license;
+    public ComplexLicenseView license;
 
-    private Date releasedOn;
+    public Date releasedOn;
 
-    private ComponentVersionSourceEnum source;
+    public ComponentVersionSourceEnum source;
 
-    private String versionName;
-
-    public ComplexLicenseView getLicense() {
-        return license;
-    }
-
-    public Date getReleasedOn() {
-        return releasedOn;
-    }
-
-    public ComponentVersionSourceEnum getSource() {
-        return source;
-    }
-
-    public String getVersionName() {
-        return versionName;
-    }
+    public String versionName;
 
 }

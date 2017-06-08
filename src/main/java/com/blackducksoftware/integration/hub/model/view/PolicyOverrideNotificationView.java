@@ -26,10 +26,6 @@ package com.blackducksoftware.integration.hub.model.view;
 import com.blackducksoftware.integration.hub.model.view.components.PolicyOverrideNotificationContent;
 
 public class PolicyOverrideNotificationView extends NotificationView {
-    private PolicyOverrideNotificationContent content;
-
-    public PolicyOverrideNotificationContent getContent() {
-        return content;
-    }
+    public PolicyOverrideNotificationContent content;
 
 }

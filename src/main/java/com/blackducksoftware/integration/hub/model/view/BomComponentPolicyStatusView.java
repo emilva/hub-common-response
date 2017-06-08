@@ -23,17 +23,10 @@
  */
 package com.blackducksoftware.integration.hub.model.view;
 
+import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.VersionBomPolicyStatusOverallStatusEnum;
 
 public class BomComponentPolicyStatusView extends HubView {
-    private VersionBomPolicyStatusOverallStatusEnum approvalStatus;
-
-    public VersionBomPolicyStatusOverallStatusEnum getApprovalStatus() {
-        return approvalStatus;
-    }
-
-    public void setApprovalStatus(final VersionBomPolicyStatusOverallStatusEnum approvalStatus) {
-        this.approvalStatus = approvalStatus;
-    }
+    public VersionBomPolicyStatusOverallStatusEnum approvalStatus;
 
 }
