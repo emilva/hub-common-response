@@ -47,7 +47,8 @@ public class ProjectVersionRequest {
     // description from Hub API: "The logical date the Release became available for usage"
     private Date releasedOn;
 
-    public ProjectVersionRequest(final ProjectVersionDistributionEnum distribution, final ProjectVersionPhaseEnum phase, final String versionName) {
+    public ProjectVersionRequest(final ProjectVersionDistributionEnum distribution, final ProjectVersionPhaseEnum phase,
+            final String versionName) {
         this.distribution = distribution;
         this.phase = phase;
         this.versionName = versionName;
