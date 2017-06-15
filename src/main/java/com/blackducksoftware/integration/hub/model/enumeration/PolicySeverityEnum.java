@@ -21,33 +21,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view;
+package com.blackducksoftware.integration.hub.model.enumeration;
 
-import java.util.Date;
-
-import com.blackducksoftware.integration.hub.model.HubView;
-import com.blackducksoftware.integration.hub.model.enumeration.PolicySeverityEnum;
-import com.blackducksoftware.integration.hub.model.view.components.PolicyRuleExpressionSet;
-
-public class PolicyRuleView extends HubView {
-    public String name;
-
-    public String description;
-
-    public Boolean enabled;
-
-    public Boolean overridable;
-
-    public PolicySeverityEnum severity;
-
-    public PolicyRuleExpressionSet expression;
-
-    public Date createdAt;
-
-    public String createdBy;
-
-    public Date updatedAt;
-
-    public String updatedBy;
+public enum PolicySeverityEnum {
+    BLOCKER,
+    CRITICAL,
+    MAJOR,
+    MINOR,
+    TRIVIAL;
 
 }
