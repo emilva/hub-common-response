@@ -21,16 +21,28 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model;
+package com.blackducksoftware.integration.hub.model.view.components;
 
-import com.blackducksoftware.integration.hub.model.view.components.MetaView;
-import com.google.gson.annotations.SerializedName;
+import java.util.Date;
 
-/**
- * A marker class used when a HubResponse has the '_meta' property which, for now, must be determined manually by
- * actually performing requests against Hub endpoints.
- */
-public class HubView extends HubResponse {
-    @SerializedName("_meta")
-    public MetaView meta;
+import com.blackducksoftware.integration.hub.model.HubComponent;
+
+public final class ReviewedDetailsView extends HubComponent {
+
+    private final String reviewedBy;
+
+    private final Date reviewedAt;
+
+    public ReviewedDetailsView(String reviewedBy, Date reviewedAt) {
+        this.reviewedBy = reviewedBy;
+        this.reviewedAt = reviewedAt;
+    }
+
+    public String getReviewedBy() {
+        return reviewedBy;
+    }
+
+    public Date getReviewedAt() {
+        return reviewedAt;
+    }
 }

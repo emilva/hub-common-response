@@ -21,16 +21,33 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model;
+package com.blackducksoftware.integration.hub.model.view;
 
-import com.blackducksoftware.integration.hub.model.view.components.MetaView;
+import java.util.Set;
+
+import com.blackducksoftware.integration.hub.model.HubView;
+import com.blackducksoftware.integration.hub.model.enumeration.MatchedFileUsageEnum;
+import com.blackducksoftware.integration.hub.model.view.components.FilePathView;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * A marker class used when a HubResponse has the '_meta' property which, for now, must be determined manually by
- * actually performing requests against Hub endpoints.
- */
-public class HubView extends HubResponse {
-    @SerializedName("_meta")
-    public MetaView meta;
+public final class MatchedFilesView extends HubView {
+    @SerializedName("filePath")
+    private final FilePathView filePath;
+
+    @SerializedName("usages")
+    private final Set<MatchedFileUsageEnum> usages;
+
+    public MatchedFilesView(FilePathView filePath, Set<MatchedFileUsageEnum> usages) {
+        this.filePath = filePath;
+        this.usages = usages;
+    }
+
+    public FilePathView getFilePath() {
+        return filePath;
+    }
+
+    public Set<MatchedFileUsageEnum> getUsages() {
+        return usages;
+    }
+
 }

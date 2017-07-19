@@ -40,8 +40,12 @@ import java.util.Date;
 import java.util.List;
 
 import com.blackducksoftware.integration.hub.model.HubView;
+import com.blackducksoftware.integration.hub.model.enumeration.MatchTypeEnum;
 import com.blackducksoftware.integration.hub.model.enumeration.MatchedFileUsageEnum;
+import com.blackducksoftware.integration.hub.model.enumeration.ReviewStatusEnum;
 import com.blackducksoftware.integration.hub.model.view.components.ActivityDataView;
+import com.blackducksoftware.integration.hub.model.view.components.OriginView;
+import com.blackducksoftware.integration.hub.model.view.components.ReviewedDetailsView;
 import com.blackducksoftware.integration.hub.model.view.components.RiskProfileView;
 import com.blackducksoftware.integration.hub.model.view.components.VersionBomLicenseView;
 import com.google.gson.annotations.SerializedName;
@@ -74,6 +78,12 @@ public class VersionBomComponentView extends HubView {
     @SerializedName("operationalRiskProfile")
     public RiskProfileView operationalRiskProfile = null;
 
+    @SerializedName("origins")
+    public List<OriginView> origins;
+
+    @SerializedName("matchTypes")
+    public List<MatchTypeEnum> matchTypes;
+
     @SerializedName("releasedOn")
     public Date releasedOn = null;
 
@@ -86,4 +96,12 @@ public class VersionBomComponentView extends HubView {
     @SerializedName("versionRiskProfile")
     public RiskProfileView versionRiskProfile = null;
 
+    @SerializedName("reviewStatus")
+    public ReviewStatusEnum reviewStatus;
+
+    @SerializedName("reviewedDetails")
+    public ReviewedDetailsView reviewedDetails;
+
+    @SerializedName("approvalStatus")
+    public String approvalStatus;
 }
