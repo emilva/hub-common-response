@@ -25,21 +25,7 @@ package com.blackducksoftware.integration.hub.model.view.components;
 import com.blackducksoftware.integration.hub.model.HubComponent;
 
 public final class LinkView extends HubComponent {
-    private final String rel;
-
-    private final String href;
-
-    public LinkView(String rel, String href) {
-        this.rel = rel;
-        this.href = href;
-    }
-
-    public String getRel() {
-        return rel;
-    }
-
-    public String getHref() {
-        return href;
-    }
+    public String rel;
+    public String href;
 
 }

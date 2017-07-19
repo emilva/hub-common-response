@@ -26,35 +26,9 @@ package com.blackducksoftware.integration.hub.model.view.components;
 import com.blackducksoftware.integration.hub.model.HubComponent;
 
 public final class FilePathView extends HubComponent {
-    private final String path;
-
-    private final String archiveContext;
-
-    private final String fileName;
-
-    private final String compositePathContext;
-
-    public FilePathView(String path, String archiveContext, String fileName, String compositePathContext) {
-        this.path = path;
-        this.archiveContext = archiveContext;
-        this.fileName = fileName;
-        this.compositePathContext = compositePathContext;
-    }
-
-    public String getPath() {
-        return path;
-    }
-
-    public String getArchiveContext() {
-        return archiveContext;
-    }
-
-    public String getFileName() {
-        return fileName;
-    }
-
-    public String getCompositePathContext() {
-        return compositePathContext;
-    }
+    public String path;
+    public String archiveContext;
+    public String fileName;
+    public String compositePathContext;
 
 }

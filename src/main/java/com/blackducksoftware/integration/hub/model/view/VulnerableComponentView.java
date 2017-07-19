@@ -28,17 +28,13 @@ import com.google.gson.annotations.SerializedName;
 
 public class VulnerableComponentView extends HubView {
     public String componentName;
-
     public String componentVersionName;
-
     public String componentVersionOriginName;
-
     public String componentVersionOriginId;
+    public VulnerabilityWithRemediationView vulnerabilityWithRemediation;
 
     @SerializedName("componentVersion")
     public String componentVersionLink;
-
-    public VulnerabilityWithRemediationView vulnerabilityWithRemediation;
 
     // Also in Hub's response: License
 }

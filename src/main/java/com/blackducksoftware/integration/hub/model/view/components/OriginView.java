@@ -24,41 +24,11 @@
 package com.blackducksoftware.integration.hub.model.view.components;
 
 import com.blackducksoftware.integration.hub.model.HubView;
-import com.google.gson.annotations.SerializedName;
 
 public final class OriginView extends HubView {
-    @SerializedName("name")
-    private final String name;
+    public String name;
+    public String externalNamespace;
+    public String externalId;
+    public boolean externalNamespaceDistribution;
 
-    @SerializedName("externalNamespace")
-    private final String externalNamespace;
-
-    @SerializedName("externalId")
-    private final String externalId;
-
-    @SerializedName("externalNamespaceDistribution")
-    private final boolean externalNamespaceDistribution;
-
-    public OriginView(String name, String externalNamespace, String externalId, boolean externalNamespaceDistribution) {
-        this.name = name;
-        this.externalNamespace = externalNamespace;
-        this.externalId = externalId;
-        this.externalNamespaceDistribution = externalNamespaceDistribution;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getExternalNamespace() {
-        return externalNamespace;
-    }
-
-    public String getExternalId() {
-        return externalId;
-    }
-
-    public boolean isExternalNamespaceDistribution() {
-        return externalNamespaceDistribution;
-    }
 }
