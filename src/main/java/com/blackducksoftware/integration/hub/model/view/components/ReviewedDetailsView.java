@@ -27,7 +27,7 @@ import java.util.Date;
 
 import com.blackducksoftware.integration.hub.model.HubComponent;
 
-public final class ReviewedDetailsView extends HubComponent {
+public class ReviewedDetailsView extends HubComponent {
     public String reviewedBy;
     public Date reviewedAt;
 

@@ -27,7 +27,7 @@ import java.util.Date;
 
 import com.blackducksoftware.integration.hub.model.HubView;
 
-public final class RiskProfileView extends HubView {
+public class RiskProfileView extends HubView {
     public Date bomLastUpdatedAt;
 
 }

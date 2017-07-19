@@ -25,7 +25,7 @@ package com.blackducksoftware.integration.hub.model.view.components;
 
 import com.blackducksoftware.integration.hub.model.HubView;
 
-public final class OriginView extends HubView {
+public class OriginView extends HubView {
     public String name;
     public String externalNamespace;
     public String externalId;

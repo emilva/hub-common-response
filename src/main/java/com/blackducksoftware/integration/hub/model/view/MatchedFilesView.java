@@ -29,7 +29,7 @@ import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.MatchedFileUsageEnum;
 import com.blackducksoftware.integration.hub.model.view.components.FilePathView;
 
-public final class MatchedFilesView extends HubView {
+public class MatchedFilesView extends HubView {
     public FilePathView filePath;
     public Set<MatchedFileUsageEnum> usages;
 

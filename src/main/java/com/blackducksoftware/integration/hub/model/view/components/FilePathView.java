@@ -25,7 +25,7 @@ package com.blackducksoftware.integration.hub.model.view.components;
 
 import com.blackducksoftware.integration.hub.model.HubComponent;
 
-public final class FilePathView extends HubComponent {
+public class FilePathView extends HubComponent {
     public String path;
     public String archiveContext;
     public String fileName;
