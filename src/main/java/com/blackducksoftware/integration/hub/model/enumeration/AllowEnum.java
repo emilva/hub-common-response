@@ -27,5 +27,5 @@ public enum AllowEnum {
     GET,
     POST,
     PUT,
-    DELETE
+    DELETE;
 }

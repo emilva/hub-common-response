@@ -24,20 +24,22 @@
 package com.blackducksoftware.integration.hub.model.enumeration;
 
 public enum MatchTypeEnum {
-    // Match via complete archive or directory contents designating an exact match with files added, deleted, and/or
-    // modified.
+    // Match via complete archive or directory contents designating an exact
+    // match with files added, deleted, and/or modified.
     FILE_FILES_ADDED_DELETED_AND_MODIFIED,
 
     // Match via partial file contents designating a dependency match.
     FILE_DEPENDENCY,
 
-    // Match via complete archive or directory contents designating an exact match.
+    // Match via complete archive or directory contents designating an exact
+    // match.
     FILE_EXACT,
 
     // Match via complete file contents designating an exact match.
     FILE_EXACT_FILE_MATCH,
 
-    // Match via complete archive or directory contents designating an exact match with some files modified.
+    // Match via complete archive or directory contents designating an exact
+    // match with some files modified.
     FILE_SOME_FILES_MODIFIED,
 
     // Match via manual addition of a version BOM component.

@@ -28,26 +28,9 @@ import java.util.Set;
 import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.MatchedFileUsageEnum;
 import com.blackducksoftware.integration.hub.model.view.components.FilePathView;
-import com.google.gson.annotations.SerializedName;
 
-public final class MatchedFilesView extends HubView {
-    @SerializedName("filePath")
-    private final FilePathView filePath;
-
-    @SerializedName("usages")
-    private final Set<MatchedFileUsageEnum> usages;
-
-    public MatchedFilesView(FilePathView filePath, Set<MatchedFileUsageEnum> usages) {
-        this.filePath = filePath;
-        this.usages = usages;
-    }
-
-    public FilePathView getFilePath() {
-        return filePath;
-    }
-
-    public Set<MatchedFileUsageEnum> getUsages() {
-        return usages;
-    }
+public class MatchedFilesView extends HubView {
+    public FilePathView filePath;
+    public Set<MatchedFileUsageEnum> usages;
 
 }

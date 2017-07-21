@@ -28,29 +28,9 @@ import java.util.List;
 import com.blackducksoftware.integration.hub.model.HubComponent;
 import com.blackducksoftware.integration.hub.model.enumeration.AllowEnum;
 
-public final class MetaView extends HubComponent {
-    private final List<AllowEnum> allow;
-
-    private final String href;
-
-    private final List<LinkView> links;
-
-    public MetaView(List<AllowEnum> allow, String href, List<LinkView> links) {
-        this.allow = allow;
-        this.href = href;
-        this.links = links;
-    }
-
-    public List<AllowEnum> getAllow() {
-        return allow;
-    }
-
-    public String getHref() {
-        return href;
-    }
-
-    public List<LinkView> getLinks() {
-        return links;
-    }
+public class MetaView extends HubComponent {
+    public List<AllowEnum> allow;
+    public String href;
+    public List<LinkView> links;
 
 }
