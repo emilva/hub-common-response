@@ -23,18 +23,11 @@
  */
 package com.blackducksoftware.integration.hub.model.view;
 
+import java.util.Date;
+
 import com.blackducksoftware.integration.hub.model.HubView;
-import com.google.gson.annotations.SerializedName;
 
-public class VulnerableComponentView extends HubView {
-    public String componentName;
-    public String componentVersionName;
-    public String componentVersionOriginName;
-    public String componentVersionOriginId;
-    public VulnerabilityWithRemediationView vulnerabilityWithRemediation;
+public class RiskProfileView extends HubView {
+    public Date bomLastUpdatedAt;
 
-    @SerializedName("componentVersion")
-    public String componentVersionLink;
-
-    // Also in Hub's response: License
 }

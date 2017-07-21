@@ -21,20 +21,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view;
+package com.blackducksoftware.integration.hub.model.view.components;
 
-import com.blackducksoftware.integration.hub.model.HubView;
-import com.google.gson.annotations.SerializedName;
+import java.util.List;
 
-public class VulnerableComponentView extends HubView {
-    public String componentName;
-    public String componentVersionName;
-    public String componentVersionOriginName;
-    public String componentVersionOriginId;
-    public VulnerabilityWithRemediationView vulnerabilityWithRemediation;
+import com.blackducksoftware.integration.hub.model.HubComponent;
+import com.blackducksoftware.integration.hub.model.enumeration.AllowEnum;
 
-    @SerializedName("componentVersion")
-    public String componentVersionLink;
+public class MetaView extends HubComponent {
+    public List<AllowEnum> allow;
+    public String href;
+    public List<LinkView> links;
 
-    // Also in Hub's response: License
 }

@@ -23,10 +23,14 @@
  */
 package com.blackducksoftware.integration.hub.model;
 
+import com.blackducksoftware.integration.hub.model.view.components.MetaView;
+import com.google.gson.annotations.SerializedName;
+
 /**
  * A marker class used when a HubResponse has the '_meta' property which, for now, must be determined manually by
  * actually performing requests against Hub endpoints.
  */
 public class HubView extends HubResponse {
-
+    @SerializedName("_meta")
+    public MetaView meta;
 }

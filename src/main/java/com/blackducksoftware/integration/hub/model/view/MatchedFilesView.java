@@ -23,18 +23,14 @@
  */
 package com.blackducksoftware.integration.hub.model.view;
 
+import java.util.Set;
+
 import com.blackducksoftware.integration.hub.model.HubView;
-import com.google.gson.annotations.SerializedName;
+import com.blackducksoftware.integration.hub.model.enumeration.MatchedFileUsageEnum;
+import com.blackducksoftware.integration.hub.model.view.components.FilePathView;
 
-public class VulnerableComponentView extends HubView {
-    public String componentName;
-    public String componentVersionName;
-    public String componentVersionOriginName;
-    public String componentVersionOriginId;
-    public VulnerabilityWithRemediationView vulnerabilityWithRemediation;
+public class MatchedFilesView extends HubView {
+    public FilePathView filePath;
+    public Set<MatchedFileUsageEnum> usages;
 
-    @SerializedName("componentVersion")
-    public String componentVersionLink;
-
-    // Also in Hub's response: License
 }

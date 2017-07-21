@@ -21,20 +21,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view;
+package com.blackducksoftware.integration.hub.model.view.components;
 
-import com.blackducksoftware.integration.hub.model.HubView;
-import com.google.gson.annotations.SerializedName;
+import com.blackducksoftware.integration.hub.model.HubComponent;
 
-public class VulnerableComponentView extends HubView {
-    public String componentName;
-    public String componentVersionName;
-    public String componentVersionOriginName;
-    public String componentVersionOriginId;
-    public VulnerabilityWithRemediationView vulnerabilityWithRemediation;
+public class FilePathView extends HubComponent {
+    public String path;
+    public String archiveContext;
+    public String fileName;
+    public String compositePathContext;
 
-    @SerializedName("componentVersion")
-    public String componentVersionLink;
-
-    // Also in Hub's response: License
 }

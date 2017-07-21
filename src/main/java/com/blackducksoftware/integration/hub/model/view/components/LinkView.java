@@ -1,17 +1,16 @@
-/**
- * Hub Common Response
- *
- * Copyright (C) 2017 Black Duck Software, Inc.
+/*
+ * Copyright (C) 2017 Black Duck Software Inc.
  * http://www.blackducksoftware.com/
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements. See the NOTICE file
  * distributed with this work for additional information
- * regarding copyright ownership. The ASF licenses this file
+ * regarding copyright ownership.
+ *
+ * The ASF licenses this file
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License. You may obtain a copy of the License at
- *
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing,
@@ -21,20 +20,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view;
+package com.blackducksoftware.integration.hub.model.view.components;
 
-import com.blackducksoftware.integration.hub.model.HubView;
-import com.google.gson.annotations.SerializedName;
+import com.blackducksoftware.integration.hub.model.HubComponent;
 
-public class VulnerableComponentView extends HubView {
-    public String componentName;
-    public String componentVersionName;
-    public String componentVersionOriginName;
-    public String componentVersionOriginId;
-    public VulnerabilityWithRemediationView vulnerabilityWithRemediation;
+public class LinkView extends HubComponent {
+    public String rel;
+    public String href;
 
-    @SerializedName("componentVersion")
-    public String componentVersionLink;
-
-    // Also in Hub's response: License
 }

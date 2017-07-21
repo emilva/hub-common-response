@@ -21,20 +21,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view;
+package com.blackducksoftware.integration.hub.model.enumeration;
 
-import com.blackducksoftware.integration.hub.model.HubView;
-import com.google.gson.annotations.SerializedName;
+public enum ReviewStatusEnum {
+    NOT_REVIEWED,
+    REVIEWED;
 
-public class VulnerableComponentView extends HubView {
-    public String componentName;
-    public String componentVersionName;
-    public String componentVersionOriginName;
-    public String componentVersionOriginId;
-    public VulnerabilityWithRemediationView vulnerabilityWithRemediation;
-
-    @SerializedName("componentVersion")
-    public String componentVersionLink;
-
-    // Also in Hub's response: License
+    public static ReviewStatusEnum defaultValue() {
+        return NOT_REVIEWED;
+    }
 }
