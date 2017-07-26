@@ -21,16 +21,24 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view;
+package com.blackducksoftware.integration.hub.model.view.components;
 
-import java.util.Date;
+import com.blackducksoftware.integration.hub.model.HubComponent;
+import com.google.gson.annotations.SerializedName;
 
-import com.blackducksoftware.integration.hub.model.HubView;
-import com.blackducksoftware.integration.hub.model.view.components.CategoriesView;
+public class CategoriesView extends HubComponent {
+    @SerializedName("ACTIVITY")
+    public CategoryCountView activity;
 
-public class RiskProfileView extends HubView {
-    public CategoriesView categories;
+    @SerializedName("LICENSE")
+    public CategoryCountView license;
 
-    public Date bomLastUpdatedAt;
+    @SerializedName("VULNERABILITY")
+    public CategoryCountView vulnerability;
 
+    @SerializedName("VERSION")
+    public CategoryCountView version;
+
+    @SerializedName("OPERATIONAL")
+    public CategoryCountView operational;
 }

@@ -21,16 +21,24 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view;
+package com.blackducksoftware.integration.hub.model.view.components;
 
-import java.util.Date;
+import com.blackducksoftware.integration.hub.model.HubComponent;
+import com.google.gson.annotations.SerializedName;
 
-import com.blackducksoftware.integration.hub.model.HubView;
-import com.blackducksoftware.integration.hub.model.view.components.CategoriesView;
+public class CategoryCountView extends HubComponent {
+    @SerializedName("HIGH")
+    public int highCount;
 
-public class RiskProfileView extends HubView {
-    public CategoriesView categories;
+    @SerializedName("MEDIUM")
+    public int mediumCount;
 
-    public Date bomLastUpdatedAt;
+    @SerializedName("LOW")
+    public int lowCount;
 
+    @SerializedName("OK")
+    public int okCount;
+
+    @SerializedName("UNKNOWN")
+    public int unknownCount;
 }
