@@ -23,7 +23,9 @@
  */
 package com.blackducksoftware.integration.hub.model.view;
 
-public class RoleAssignmentView {
+import com.blackducksoftware.integration.hub.model.HubView;
+
+public class RoleAssignmentView extends HubView {
 	
 	public String name;
 	
