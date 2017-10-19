@@ -21,20 +21,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.blackducksoftware.integration.hub.model.view;
+package com.blackducksoftware.integration.hub.model.view.components;
 
-import java.util.Date;
 import java.util.List;
 
-import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.VersionBomPolicyStatusOverallStatusEnum;
-import com.blackducksoftware.integration.hub.model.view.components.ComponentVersionPolicyViolationDetails;
-import com.blackducksoftware.integration.hub.model.view.components.ComponentVersionStatusCount;
 
-public class VersionBomPolicyStatusView extends HubView {
-    public VersionBomPolicyStatusOverallStatusEnum overallStatus;
-    public ComponentVersionPolicyViolationDetails componentVersionPolicyViolationDetails;
-    public Date updatedAt;
-    public List<ComponentVersionStatusCount> componentVersionStatusCounts;
-
+public class ComponentVersionPolicyViolationDetails {
+    public VersionBomPolicyStatusOverallStatusEnum name;
+    public List<ComponentVersionPolicyViolationCount> severityLevels;
 }
