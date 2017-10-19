@@ -28,10 +28,13 @@ import java.util.List;
 
 import com.blackducksoftware.integration.hub.model.HubView;
 import com.blackducksoftware.integration.hub.model.enumeration.VersionBomPolicyStatusOverallStatusEnum;
+import com.blackducksoftware.integration.hub.model.view.components.ComponentVersionPolicyViolationView;
 import com.blackducksoftware.integration.hub.model.view.components.ComponentVersionStatusCount;
 
 public class VersionBomPolicyStatusView extends HubView {
     public VersionBomPolicyStatusOverallStatusEnum overallStatus;
+
+    public ComponentVersionPolicyViolationView componentVersionPolicyViolationDetails;
 
     public Date updatedAt;
 
